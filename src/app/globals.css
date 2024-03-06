@@ -1,10 +1,5 @@
 /* font */
 @font-face {
-  font-family: 'Bold';
-  src: local("AnyTestFont"), 
-        url("/fonts/SpaceGrotesk-Bold.ttf") format("truetype");
-}
-@font-face {
   font-family: 'Light';
   src: local("AnyTestFont"), 
         url("/fonts/SpaceGrotesk-Light.ttf") format("truetype");
@@ -18,6 +13,44 @@
   font-family: 'Regular';
   src: local("AnyTestFont"), 
         url("/fonts/SpaceGrotesk-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'SUITMedium';
+  src: local("AnyTestFont"), 
+        url("/fonts/SUIT-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'SUITRegular';
+  src: local("AnyTestFont"), 
+        url("/fonts/SUIT-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'SUITThin';
+  src: local("AnyTestFont"), 
+        url("/fonts/SUIT-Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'InterRegular';
+  src: local("AnyTestFont"), 
+        url("/fonts/Inter-Regular.ttf") format("truetype");
+  unicode-range:U+0041-005A, U+0061-007A, 
+                U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E,
+                U+0030-0039;
+}
+@font-face {
+  font-family: 'InterLight';
+  src: local("AnyTestFont"), 
+        url("/fonts/Inter-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'InterThin';
+  src: local("AnyTestFont"), 
+        url("/fonts/Inter-Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'InterELight';
+  src: local("AnyTestFont"), 
+        url("/fonts/Inter-ExtraLight.ttf") format("truetype");
 }
 @font-face {
   font-family: 'Alex';
@@ -358,7 +391,7 @@ div{
       display: grid;
       grid-template-columns: 5.0521vw auto;
       gap: 0.8854vw;
-      margin-bottom: 1.7708vw;
+      margin-bottom: 1.0417vw;
     }
     .project-information .info >div >div:nth-of-type(2){
       text-transform: uppercase;
@@ -377,10 +410,12 @@ div{
     .project-information >div:nth-of-type(2){
       font-size: 0.8333vw;
       line-height: 1.3542vw;
+      font-family: 'InterRegular';
     }
     .project-information >div:nth-of-type(3){
       font-size: 0.8333vw;
       line-height: 1.4583vw;
+      font-family: 'SUITRegular';
     }
 
 /*research*/
@@ -429,6 +464,14 @@ div{
   gap: 2%;
   font-size: 0.8333vw;
 }
+.research-statement >div:first-child{
+  font-family: 'InterRegular';
+  line-height: 1.3542vw;
+}
+.research-statement >div:last-child{
+  font-family: 'SUITRegular';
+  line-height: 1.4583vw;
+}
 .research-statement > div{
   width: 100%;
 }
@@ -442,6 +485,7 @@ div{
 .page-title{
   margin-bottom: 1.875vw;
   font-size: 1.4583vw;
+  font-family: 'Regular';
 }
 .members{
   display: grid;
@@ -467,16 +511,19 @@ div{
   font-size: 1.3021vw;
   text-transform: capitalize;
   margin-bottom: 0.15vw;
+  font-family: 'Regular';
 }
 .profile .position{
   font-size: 0.9375vw;
   color: #989898;
+  font-family: 'InterRegular';
 }
 .lab-info{
   display: grid;
   grid-template-columns: 12.5vw 12.5vw 12.5vw 8.0729vw;
   gap: 4.3229vw;
   margin-top: 5.625vw;
+  font-family: 'Light';
 }
 .lab-logo img{
   width: 100%;

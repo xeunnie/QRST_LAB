@@ -30,12 +30,12 @@ export default async function LapDetail(props){
     return(
         <div className="background detail-container">
             <div className="project-info-btn">
-                <Link href={`/pages/lapinfo/${id}`}> 
+                <Link href={`/pages/labinfo/${id}`}> 
                     <span><Plus/></span>
                     <span>Project Information</span>
                 </Link>
             </div>
-            <div>
+            <div className="detail-images-wrap">
                 {imageArray.map((row, rowIndex) => (
                     <div key={rowIndex} className="flex-layout">
                         {row.map((imageURL, colIndex) => (

@@ -12,7 +12,7 @@ export default async function Lap(){
             <div className="flex-wrap">
                 {lab && lab.map((lab,index)=>(
                     <div className="flex-item" key={index}>
-                        <Link href={`/pages/lapdetail/${index}`}>
+                        <Link href={`/pages/labdetail/${index}`}>
                             <Image 
                                 src={'https:'+lab.fields.mainImage.fields.file.url} 
                                 alt="..." 
