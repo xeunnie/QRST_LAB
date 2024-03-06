@@ -524,6 +524,7 @@ div{
   gap: 4.3229vw;
   margin-top: 5.625vw;
   font-family: 'Light';
+  text-transform: capitalize;
 }
 .lab-logo img{
   width: 100%;
