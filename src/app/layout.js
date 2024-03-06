@@ -15,9 +15,9 @@ export default function RootLayout({ children }) {
         {children}
         <header>
           <nav>
-            <span><Link href="/">studio</Link></span>
+            <span><Link href="/pages/studio">studio</Link></span>
             <span><Link href="/pages/lab">lab</Link></span>
-            <span><Link href="/">research</Link></span>
+            <span><Link href="/pages/research">research</Link></span>
             <span><Link href="/pages/people">people</Link></span>
           </nav>
         </header>
