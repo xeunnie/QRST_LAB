@@ -229,6 +229,7 @@ div{
     right: 0;
     width: 100vw;
     height: 3.2292vw;
+    z-index: 10;
   }
   header nav{
     position: absolute;
@@ -240,10 +241,10 @@ div{
     text-transform: uppercase;
     color: #0BD060;
   }
-  header nav span{
+  header nav a{
     margin-left: 3.2292vw;
   }
-  header nav span a{color: #0BD060;}
+  header nav a{color: #0BD060;}
 
   
   /* all */
