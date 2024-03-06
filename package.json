@@ -9,15 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^15.19.6",
+    "aos": "^3.0.0-beta.6",
+    "contentful": "^10.6.25",
+    "next": "13.5.6",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "13.5.6"
+    "react-dom": "^18"
   },
   "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
     "autoprefixer": "^10",
-    "postcss": "^8",
-    "tailwindcss": "^3",
     "eslint": "^8",
-    "eslint-config-next": "13.5.6"
+    "eslint-config-next": "13.5.6",
+    "postcss": "^8",
+    "tailwindcss": "^3"
   }
 }
