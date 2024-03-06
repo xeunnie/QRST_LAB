@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Up from '/public/icons/up.svg'
 import Down from '/public/icons/down.svg'
+import Clients from './component/clients';
 
 export default function Home() {
   const [page, setPage] = useState(0);
@@ -139,6 +140,7 @@ export default function Home() {
           <div className='clients-logo-wrap'>
               <div>our clients :</div>
               <div className='clients-list'>
+                <Clients/>
               </div>
             </div>
         </div>
