@@ -65,6 +65,7 @@
 body{
     padding: 0;
     margin: 0;
+    background-color: #080808;
 }
 a{
   text-decoration: none;
@@ -524,6 +525,28 @@ div{
   .flex-layout span img{
     width: 100%;
     height: auto;
+  }
+  @media screen and (max-width : 834px) {
+    .detail-container{
+      padding: 7.9889vw calc(60px + 4.722vw) 7.9889vw 7.7778vw;
+    }
+    .project-info-btn{
+      font-size: 3.333vw;
+      text-transform: uppercase;
+    }
+    .project-info-btn svg{
+      width: 1.8vw;
+      height: auto;
+    }
+    .project-info-btn span{
+      margin-right: 1vw;
+    }
+    .flex-layout span{
+      flex: 1 1 100%;
+    }
+    .detail-images-wrap{
+      margin-top: 8.8889vw;
+    }
   }
 
     /* studio ,lab info */

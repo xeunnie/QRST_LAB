@@ -27,7 +27,7 @@ export default async function Lap(){
                     </div>
                 ))}
             </div>
-            <Pagination pageName="lap"/>
+            <Pagination pageName="lab"/>
         </div>
     )
 }

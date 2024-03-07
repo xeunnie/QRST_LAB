@@ -51,7 +51,7 @@ export default async function LapDetail(props){
                     </div>
                 ))}
             </div>
-            <Pagination pageName="lap"/>
+            <Pagination pageName="lab"/>
         </div>
     )
 }
