@@ -169,6 +169,32 @@ div{
   margin-bottom: 7.778vh;
   font-family: 'Regular';
 }
+@media screen and (max-width:834px) {
+  .screen1 .text{
+    font-size: 7.778vw;
+    padding: 10vw 0vw 12.22vw 7.778vw;
+  }
+  .screen2{
+    background-color: #0BD060;
+  }
+  .screen2 .text{
+    color: #000;
+    font-size: 8.333vw;
+    font-weight: 700;
+    padding: 13.611vw 0vw 13.611vw 7.778vw;
+  }
+  .screen3 .text{
+    width: 69.444vw;
+    font-size: 4.722vw;
+    line-height: 6.667vw;
+  }
+  .screen3 .clients-logo-wrap >div:first-child{
+    font-size: 7.778vw;
+  }
+  .container{
+    padding-right: 60px;
+  }
+}
 
 /* clients */
 .clients > div{
@@ -208,22 +234,37 @@ div{
   height: 100%;
   width: auto;
 }
+@media screen and (max-width:834px) {
+  .clients >div{
+    width: 30.4699vw;
+    height: 6.0336vw;
+  }
+}
 
 /* pagination */
   .pagination{
     background-color: #0BD060;
     width: 3.2292vw;
-    height: 100vh;
+    height: calc(100vh - 3.148vh);
     position: fixed;
     right: 0;
-    top: 0;
+    /* top: 0; */
     bottom: 0;
     font-family: 'Regular';
   }
+  .menu{
+    background-color: #0BD060;
+    width: 3.2292vw;
+    height: 54px;
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+  .menu svg{display: none;}
   .pagination .title{
     text-transform: uppercase;
   }
-  .pagination div:first-child{
+  .pagination >div:first-child{
     transform-origin: right center;
     -ms-transform: rotate(-90deg); 
     -webkit-transform: rotate(-90deg); 
@@ -254,6 +295,35 @@ div{
     display: none;
   }
 
+@media screen and (max-width : 834px) {
+  .pagination{
+    width: 60px;
+    height: calc(100vh - 50px);
+  }
+  .menu{
+    width: 60px;
+    height: 100vh;
+  }
+  .menu svg{
+    width: 12px;
+    height: auto;
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    transform: translate(-50%);
+    display: block;
+  }
+  .pagination >div:first-child{
+    font-size: 17px;
+  }
+  .pagination .icon-wrap{
+    bottom: 44px;
+  }
+  .pagination .icon-wrap svg{
+    margin-top: 14px;
+    width: 13px;
+  }
+}
 /* menu bar */
   header{
     position: fixed;
@@ -278,6 +348,40 @@ div{
     margin-left: 3.2292vw;
   }
   header nav a{color: #0BD060;}
+  .mobile-menu{display: none;}
+  @media screen and (max-width : 834px) {
+    header{display: none;}
+    .menu-on{display: block;}
+    .menu-off{display: none;}
+    .mobile-menu{
+      position: absolute;
+      z-index: 10;
+      left: 0; top: 0; right: 0; bottom: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: #0BD060;
+      padding-top: 13.3333vw;
+      padding-left: 11.1111vw;
+      box-sizing: border-box;
+    }
+    .mobile-menu svg{
+      position: absolute;
+      z-index: 20;
+      right: 22px;
+      top: 22px;
+      fill: #000;
+      width: 14.26px;
+      height: auto;
+    }
+    .mobile-menu a{
+      display: block;
+      font-size: 13.3333vw;
+      margin-bottom: 3vw;
+    }
+    .mobile-menu a:target{
+      color: white;
+    }
+  }
 
   
   /* all */
@@ -352,6 +456,7 @@ div{
   .project-info-btn svg{
     width: 0.9375vw;
     height: auto;
+    fill: white;
   }
   .project-info-btn span{
     margin-right: 0.6516vw;

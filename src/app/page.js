@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Up from '/public/icons/up.svg'
 import Down from '/public/icons/down.svg'
 import Clients from './component/clients';
+import MobileMenu from './component/mobileMenu';
 
 export default function Home() {
   const [page, setPage] = useState(0);
@@ -58,7 +59,6 @@ export default function Home() {
       }
     };
 
-    // const wrap = document.getElementById('wrap');
     const box = document.getElementsByClassName('box');
     const lastPage = box.length - 1;
 
@@ -78,10 +78,11 @@ export default function Home() {
       setTyping("");
       setTimeout(startTypingAnimation,1000);
     } 
-
+    
     const pagination = document.querySelector('.pagination div');
-      pagination.style.transition = 'top 0.5s ease-in-out';
-      pagination.style.top = `${3.148 + page * 20}vh`;
+    pagination.style.transition = 'top 0.5s ease-in-out';
+    pagination.style.top = `${page * 20}vh`;
+
   }, [page]);
 
   const text1 = "Founded by Prof. Kyuha Shim, Collective QrsT (2022-) within Korea National University of Arts is a practice-based research initiative using computational processes and methods to explore creativity. Rather than just a means, emerging technologies"
@@ -147,6 +148,7 @@ export default function Home() {
         <div className="box screen4">
         </div>
       </div>
+      <MobileMenu/>
       <div className='pagination'>
         <div>Collective QRST</div>
         <div className='icon-wrap'>

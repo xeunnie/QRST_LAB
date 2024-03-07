@@ -4,6 +4,7 @@ import Down from '/public/icons/down.svg'
 import Home from '/public/icons/home.svg'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
+import MobileMenu from './mobileMenu'
 
 export default function Pagination({pageName}){
 
@@ -48,19 +49,22 @@ export default function Pagination({pageName}){
     }
   };
     return(
-        <div className='pagination'>
-            <div className='title'><Link href={`/pages/${pageName}`}>{pageName}</Link></div>
-            <div className='icon-wrap'>
-                <Link href="/"><Home/></Link>
-                <span
-                    className={isUpVisible ? 'visible' : 'invisible'}
-                    onClick={handleScrollUp}
-                ><Up/></span>
-                <span
-                    className={isDownVisible ? 'visible' : 'invisible'}
-                    onClick={handleScrollDown}
-                ><Down/></span>
-            </div>
+        <div>
+          <MobileMenu/>
+          <div className='pagination'>
+              <div className='title'><Link href={`/pages/${pageName}`}>{pageName}</Link></div>
+              <div className='icon-wrap'>
+                  <Link href="/"><Home/></Link>
+                  <span
+                      className={isUpVisible ? 'visible' : 'invisible'}
+                      onClick={handleScrollUp}
+                  ><Up/></span>
+                  <span
+                      className={isDownVisible ? 'visible' : 'invisible'}
+                      onClick={handleScrollDown}
+                  ><Down/></span>
+              </div>
+          </div>
         </div>
     )
 }
