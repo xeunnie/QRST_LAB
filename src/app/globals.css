@@ -243,26 +243,32 @@ div{
 
 /* pagination */
   .pagination{
-    background-color: #0BD060;
     width: 3.2292vw;
     height: calc(100vh - 3.148vh);
     position: fixed;
     right: 0;
-    /* top: 0; */
     bottom: 0;
     font-family: 'Regular';
   }
-  .menu{
+  .container .pagination, .background .pagination{
     background-color: #0BD060;
+  }
+  .menu{
     width: 3.2292vw;
     height: 54px;
     position: fixed;
     right: 0;
     top: 0;
   }
+  .container .menu, .background .menu{
+    background-color: #0BD060;
+  }
   .menu svg{display: none;}
   .pagination .title{
     text-transform: uppercase;
+  }
+  .pagination .title a{
+    color: #080808;
   }
   .pagination >div:first-child{
     transform-origin: right center;
@@ -288,6 +294,20 @@ div{
     width: 1.4583vw;
     height: auto;
   }
+  .container .pagination >a svg{
+    fill: #080808;
+  }
+  .container .pagination .icon-wrap svg{
+    stroke: #080808;
+    stroke-width: 2.4px;
+  }
+  .background .pagination .icon-wrap >a svg{
+    fill: #080808;
+  }
+  .background .pagination .icon-wrap >span svg{
+    stroke: #080808;
+    stroke-width: 2.4px;
+  }
   .visible{
     display: block;
   }
@@ -300,9 +320,24 @@ div{
     width: 60px;
     height: calc(100vh - 50px);
   }
+  .background .pagination{
+    background-color: #080808;
+  }
+  .background .pagination .title a{
+    color: #0BD060;
+  }
+  .background .pagination .icon-wrap >a svg{
+    fill: #0BD060;
+  }
+  .background .pagination .icon-wrap >span svg{
+    stroke: #0BD060;
+  }
   .menu{
     width: 60px;
     height: 100vh;
+  }
+  .background .menu{
+    background-color: #080808;
   }
   .menu svg{
     width: 12px;
@@ -392,13 +427,17 @@ div{
     padding-right: 3.2292vw;
     box-sizing: border-box;
   }
+  @media screen and (max-width : 834px) {
+    .background{
+      padding-right: 60px;
+    }
+  }
 
   /* studio, lab*/
   .flex-wrap{
     display: flex;
     flex-wrap: wrap;
     gap: 2.0833vw;
-    /* padding: 5.7292vw 5.1042vw 5.7292vw 8.333vw; */
     padding: 5.7292vw 5.1042vw 55vh 8.333vw;
   }
   .flex-item{
@@ -439,6 +478,14 @@ div{
   .flex-item:hover .project{
     display: block;
     background-color: rgba(0,0,0,0.8);
+  }
+  @media screen and (max-width : 834px) {
+    .flex-wrap{
+      padding: 8.333vw 4.7222vw 8.333vw 7.7778vw;
+    }
+    .flex-item{
+      width: 100%;
+    }
   }
 
 

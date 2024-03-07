@@ -148,7 +148,7 @@ export default function Home() {
         <div className="box screen4">
         </div>
       </div>
-      <MobileMenu/>
+      <MobileMenu page={0}/>
       <div className='pagination'>
         <div>Collective QRST</div>
         <div className='icon-wrap'>

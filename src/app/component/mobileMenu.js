@@ -5,12 +5,13 @@ import Exit from '/public/icons/exit.svg'
 import Link from 'next/link';
 import { useState } from 'react';
 
-export default function MobileMenu(){
+export default function MobileMenu(props){
+    const { page } = props;
     const [menuOn, setMenuOn]=useState(false);
 
     return(
         <div>
-            <div className='menu'>
+            <div className="menu">
                 <Menu onClick={()=>setMenuOn(true)}/>
             </div>
             <div className={`mobile-menu ${menuOn ? 'menu-on' : 'menu-off'}`}>
