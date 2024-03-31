@@ -73,11 +73,11 @@ export default function Home() {
     const wrap = document.getElementById('wrap');
     wrap.style.top = page * -100 + 'vh';
 
-    if (page === 1 && typingOn === false) {
-      setTypingOn(true); 
-      setTyping("");
-      setTimeout(startTypingAnimation,1000);
-    } 
+    // if (page === 1 && typingOn === false) {
+    //   setTypingOn(true); 
+    //   setTyping("");
+    //   setTimeout(startTypingAnimation,1000);
+    // } 
     
     const pagination = document.querySelector('.pagination div');
     pagination.style.transition = 'top 0.5s ease-in-out';
@@ -86,27 +86,29 @@ export default function Home() {
   }, [page]);
 
   const text1 = "Founded by Prof. Kyuha Shim, Collective QrsT (2022-) within Korea National University of Arts is a practice-based research initiative using computational processes and methods to explore creativity. Rather than just a means, emerging technologies"
-  const text2 = "Collective QRST"
-  const text3 = "는 2022년에 심규하 교수에 의해 창립된 한국예술종합학교 소속으로, 창의성을 탐구하기 위해 컴퓨터 프로세스와 방법을 활용하는 실천 중심의 연구 이니셔티브입니다. 단순히 수단이 아니라, 신기술들을 탐구하고 이를 통해 창의성을 탐험하는 데 중점을 두고 있습니다."
-  const text4 = "Our project type is an action-orientated research initiative that utilises computational processes and methods. Take a look at some of the clients we've worked with."
+  // const text2 = "Collective QRST"
+  // const text3 = "는 2022년에 심규하 교수에 의해 창립된 한국예술종합학교 소속으로, 창의성을 탐구하기 위해 컴퓨터 프로세스와 방법을 활용하는 실천 중심의 연구 이니셔티브입니다. 단순히 수단이 아니라, 신기술들을 탐구하고 이를 통해 창의성을 탐험하는 데 중점을 두고 있습니다.";
+  const text4 = "Our project type is an action-orientated research initiative that utilises computational processes and methods. Take a look at some of the clients we've worked with.";
+  const text5 = "Collective QRST는 2022년에 심규하 교수에 의해 창립된 한국예술종합학교 소속으로, 창의성을 탐구하기 위해 컴퓨터 프로세스와 방법을 활용하는 실천 중심의 연구 이니셔티브입니다. 단순히 수단이 아니라, 신기술들을 탐구하고 이를 통해 창의성을 탐험하는 데 중점을 두고 있습니다.";
   
-  const string = text3.split("");
-  
-  let index = 0;
 
-  const startTypingAnimation = () => {
+  // const string = text3.split("");
+  
+  // let index = 0;
+
+  // const startTypingAnimation = () => {
     
-    function Typing() {
-      if (index < string.length - 1) {
-        setTyping((prevTyping) => prevTyping + string[index]);
-        index += 1;
-        setTimeout(Typing, 100);
-      }else{
-        setTypingOn(false);
-      }
-    }
-    Typing();
-  };
+  //   function Typing() {
+  //     if (index < string.length - 1) {
+  //       setTyping((prevTyping) => prevTyping + string[index]);
+  //       index += 1;
+  //       setTimeout(Typing, 100);
+  //     }else{
+  //       setTypingOn(false);
+  //     }
+  //   }
+  //   Typing();
+  // };
 
  
   const handleScrollTop = () => {
@@ -124,22 +126,22 @@ export default function Home() {
   return (
     <div className='container'>
       <div id="wrap" className="wrap">
-        <div className="box screen1">
+        <div className="box screen1" style={{fontWeight:'300'}}>
           <div className={`text ${textOnOff?'':'text-off'}`}>
             {text1}
           </div>
         </div>
-        <div className="box screen2">
+        <div className="box screen2" style={{fontWeight:'700'}}>
           <div className="text draggdisable">
-            {text2}
-            <span className='typed-out' id='typing'>{typing}</span>
-            <span>_</span>
+            {text5}
+            {/* <span className='typed-out' id='typing'>{typing}</span> */}
+            {/* <span>_</span> */}
           </div>
         </div>
         <div className="box screen3">
-          <div className='text'>{text4}</div>
+          <div className="text" style={{fontWeight:'500'}}>{text4}</div>
           <div className='clients-logo-wrap'>
-              <div>our clients :</div>
+              <div style={{fontWeight:'400'}}>our clients :</div>
               <div className='clients-list'>
                 <Clients/>
               </div>
@@ -149,7 +151,7 @@ export default function Home() {
         </div>
       </div>
       <MobileMenu page={0}/>
-      <div className='pagination'>
+      <div className="pagination" style={{fontWeight:'400'}}>
         <div>Collective QRST</div>
         <div className='icon-wrap'>
           {page !== 0 && <Up onClick={()=>handleScrollTop()} />}

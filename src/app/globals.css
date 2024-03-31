@@ -1,65 +1,3 @@
-/* font */
-@font-face {
-  font-family: 'Light';
-  src: local("AnyTestFont"), 
-        url("/fonts/SpaceGrotesk-Light.ttf") format("truetype");
-}
-@font-face {
-  font-family: 'Medium';
-  src: local("AnyTestFont"), 
-        url("/fonts/SpaceGrotesk-Medium.ttf") format("truetype");
-}
-@font-face {
-  font-family: 'Regular';
-  src: local("AnyTestFont"), 
-        url("/fonts/SpaceGrotesk-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: 'SUITMedium';
-  src: local("AnyTestFont"), 
-        url("/fonts/SUIT-Medium.ttf") format("truetype");
-}
-@font-face {
-  font-family: 'SUITRegular';
-  src: local("AnyTestFont"), 
-        url("/fonts/SUIT-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: 'SUITThin';
-  src: local("AnyTestFont"), 
-        url("/fonts/SUIT-Thin.ttf") format("truetype");
-}
-@font-face {
-  font-family: 'InterRegular';
-  src: local("AnyTestFont"), 
-        url("/fonts/Inter-Regular.ttf") format("truetype");
-  unicode-range:U+0041-005A, U+0061-007A, 
-                U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E,
-                U+0030-0039;
-}
-@font-face {
-  font-family: 'InterLight';
-  src: local("AnyTestFont"), 
-        url("/fonts/Inter-Light.ttf") format("truetype");
-}
-@font-face {
-  font-family: 'InterThin';
-  src: local("AnyTestFont"), 
-        url("/fonts/Inter-Thin.ttf") format("truetype");
-}
-@font-face {
-  font-family: 'InterELight';
-  src: local("AnyTestFont"), 
-        url("/fonts/Inter-ExtraLight.ttf") format("truetype");
-}
-@font-face {
-  font-family: 'Alex';
-  src: local("AnyTestFont"), 
-        url("/fonts/AlexBrush-Regular.ttf") format("truetype");
-        unicode-range:U+0041-005A, U+0061-007A, 
-        U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E,
-        U+0030-0039;
-}
 
 /* global */
 body{
@@ -120,7 +58,7 @@ div{
   padding: 5.7292vw 8.333vw;
   background-color: rgba(0,0,0,0.5);
   font-size: 4.1667vw;
-  font-family: 'Light';
+  /* font-family: 'Light'; */
   height: 100%;
   transition: transform 1.3s ease-out, opacity 1.3s ease-out;
   opacity: 1;
@@ -134,7 +72,7 @@ div{
   height: 100%;
   padding: 5.7292vw 8.333vw;
   font-size: 3.75vw;
-  font-family: 'Bold';
+  /* font-family: 'Bold'; */
   z-index: 10;
 }
 .draggdisable{
@@ -152,7 +90,7 @@ div{
   position: absolute;
   top: 5.7292vw;
   right: 5.104167vw;
-  font-family: 'Medium';
+  /* font-family: 'Medium'; */
 }
 .screen3 .clients-logo-wrap{
   position: absolute;
@@ -168,7 +106,7 @@ div{
 }
 .screen3 .clients-logo-wrap >div:first-child{
   margin-bottom: 7.778vh;
-  font-family: 'Regular';
+  /* font-family: 'Regular'; */
 }
 @media screen and (max-width:834px) {
   .screen1 .text{
@@ -249,7 +187,7 @@ div{
     position: fixed;
     right: 0;
     bottom: 0;
-    font-family: 'Regular';
+    /* font-family: 'Regular'; */
   }
   .container .pagination, .background .pagination{
     background-color: #0BD060;
@@ -376,7 +314,7 @@ div{
     top: 50%;
     transform: translate(0,-50%);
     font-size: 0.8333vw;
-    font-family: 'Regular';
+    /* font-family: 'Regular'; */
     text-transform: uppercase;
     color: #0BD060;
   }
@@ -444,7 +382,7 @@ div{
   .flex-item{
     width: calc((100% - 2.0833vw) / 2);
     position: relative;
-    font-family: 'Medium';
+    /* font-family: 'Medium'; */
   }
   .flex-item img{
     width: 100%;
@@ -471,7 +409,7 @@ div{
   }
   .flex-item:hover .project >div:nth-of-type(2){
     font-size: 0.9375vw;
-    font-family: 'Regular';
+    /* font-family: 'Regular'; */
     line-height: 1.25vw;
     margin-top: 0.8333vw;
     color: rgba(255,255,255,0.5);
@@ -494,11 +432,11 @@ div{
   .detail-container{
     padding: 10.41667vw 16.3542vw 10.41667vw 17.7604vw;
     color: #FFF;
-    font-family: 'Regular';
+    /* font-family: 'Regular'; */
   }
   .project-info-btn{
     font-size: 1.3021vw;
-    font-family: 'Medium';
+    /* font-family: 'Medium'; */
     margin-left: 1.25vw;
   }
   .project-info-btn svg{
@@ -585,19 +523,19 @@ div{
     .project-information >div:nth-of-type(2){
       font-size: 0.8333vw;
       line-height: 1.3542vw;
-      font-family: 'InterRegular';
+      /* font-family: 'InterRegular'; */
     }
     .project-information >div:nth-of-type(3){
       font-size: 0.8333vw;
       line-height: 1.4583vw;
-      font-family: 'SUITRegular';
+      /* font-family: 'SUITRegular'; */
     }
 
 /*research*/
 .research-flex-item{
   width: 100%;
   position: relative;
-  font-family: 'Medium';
+  /* font-family: 'Medium'; */
   display: flex;
   flex-wrap: wrap;
   gap: 3.9%;
@@ -640,11 +578,11 @@ div{
   font-size: 0.8333vw;
 }
 .research-statement >div:first-child{
-  font-family: 'InterRegular';
+  /* font-family: 'InterRegular'; */
   line-height: 1.3542vw;
 }
 .research-statement >div:last-child{
-  font-family: 'SUITRegular';
+  /* font-family: 'SUITRegular'; */
   line-height: 1.4583vw;
 }
 .research-statement > div{
@@ -660,7 +598,7 @@ div{
 .page-title{
   margin-bottom: 1.875vw;
   font-size: 1.4583vw;
-  font-family: 'Regular';
+  /* font-family: 'Regular'; */
 }
 .members{
   display: grid;
@@ -686,19 +624,19 @@ div{
   font-size: 1.3021vw;
   text-transform: capitalize;
   margin-bottom: 0.15vw;
-  font-family: 'Regular';
+  /* font-family: 'Regular'; */
 }
 .profile .position{
   font-size: 0.9375vw;
   color: #989898;
-  font-family: 'InterRegular';
+  /* font-family: 'InterRegular'; */
 }
 .lab-info{
   display: grid;
   grid-template-columns: 12.5vw 12.5vw 12.5vw 8.0729vw;
   gap: 4.3229vw;
   margin-top: 5.625vw;
-  font-family: 'Light';
+  /* font-family: 'Light'; */
   text-transform: capitalize;
 }
 .lab-logo img{

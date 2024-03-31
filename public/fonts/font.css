@@ -1,0 +1,24 @@
+
+  @font-face {
+    font-family: 'SUITMedium';
+    src: local("AnyTestFont"), 
+          url("/fonts/SUIT-Medium.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: 'SUITRegular';
+    src: local("AnyTestFont"), 
+          url("/fonts/SUIT-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: 'SUITThin';
+    src: local("AnyTestFont"), 
+          url("/fonts/SUIT-Thin.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: 'Alex';
+    src: local("AnyTestFont"), 
+          url("/fonts/AlexBrush-Regular.ttf") format("truetype");
+          unicode-range:U+0041-005A, U+0061-007A, 
+          U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E,
+          U+0030-0039;
+  }

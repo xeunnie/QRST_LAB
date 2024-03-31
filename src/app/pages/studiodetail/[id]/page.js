@@ -28,7 +28,7 @@ export default async function stuidoDetail(props){
     const imageArray = createImageArr(images, layoutArr);
 
     return(
-        <div className="background detail-container">
+        <div className="background detail-container" style={{fontWeight:'500'}}>
             <div className="project-info-btn">
                 <Link href={`/pages/studioinfo/${id}`}> 
                     <span><Plus/></span>

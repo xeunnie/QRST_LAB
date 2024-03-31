@@ -20,8 +20,8 @@ export default async function Lap(){
                                 sizes="100vw"
                             />
                             <div className="project">
-                                <div>{lab.fields.projectName}</div>
-                                <div>{lab.fields.projectSubheading}</div>
+                                <div style={{fontWeight:'500'}}>{lab.fields.projectName}</div>
+                                <div style={{fontWeight:'400'}}>{lab.fields.projectSubheading}</div>
                             </div>
                         </Link>
                     </div>

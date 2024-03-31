@@ -49,7 +49,7 @@ export default function Pagination({pageName}){
     }
   };
     return(
-        <div>
+        <div style={{fontWeight:'400'}}>
           <MobileMenu/>
           <div className='pagination'>
               <div className='title'><Link href={`/pages/${pageName}`}>{pageName}</Link></div>

@@ -1,11 +1,17 @@
 "use client"
 
 import { fetchContentful } from "@/app/contentful/contentful"
+import { Inter } from "next/font/google";
 import Image from "next/image"
 import Pagination from "@/app/component/pagenation";
 import { useEffect,useState,useRef } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+
+const inter = Inter({
+    weight : '400',
+    subsets : ['latin'],
+});
 
 export default function Research(){
     const [research, setResearch]=useState([]);
@@ -61,10 +67,10 @@ export default function Research(){
                             />
                         </div>
                         <div>
-                            <div className="project-title">{research.fields.projectName}</div>
-                            <div className="project-subheading">{research.fields.projectSubheading}</div>
+                            <div className="project-title" style={{fontWeight:'500'}}>{research.fields.projectName}</div>
+                            <div className="project-subheading" style={{fontWeight:'400'}}>{research.fields.projectSubheading}</div>
                             <div className="research-statement">
-                                <div>
+                                <div className={inter.className}>
                                     {research.fields.statementEng && research.fields.statementEng.content.map((data,index)=>(
                                         index===0 ? (
                                             <div key={index}>{data.content[0].value}</div>

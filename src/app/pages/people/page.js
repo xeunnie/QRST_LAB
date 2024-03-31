@@ -1,8 +1,14 @@
 // "use client"
 // import { useEffect, useState } from "react"
 import { fetchContentful } from "@/app/contentful/contentful"
+import { Inter } from "next/font/google";
 import Pagination from "@/app/component/pagenation";
 import Image from "next/image";
+
+const inter = Inter({
+  weight : '400',
+  subsets : ['latin'],
+});
 
 export default async function People(){
     // const [people,setPeople]=useState([]);
@@ -31,7 +37,7 @@ export default async function People(){
     const labInfo = data[0].fields;
 
     return(
-      <div className="background people">
+      <div className="background people" style={{fontWeight:'300'}}>
         <div className="page-title">We are QRST Members</div>
         <Pagination pageName="people"/>
         <div className="members">
@@ -45,7 +51,7 @@ export default async function People(){
                   sizes="100vw"/>
               </div>
               <div className="name">{data.fields.name}</div>
-              <div className="position">{data.fields.position}</div>
+              <div className={`position ${inter.className}`}>{data.fields.position}</div>
             </div>
           ))}
         </div>
@@ -60,17 +66,17 @@ export default async function People(){
             </div>
             <div className="info-detail">
               <div>work with us</div>
-              <div>{labInfo.email}</div>
-              <div>{labInfo.contact}</div>
+              <div style={{fontWeight:'400'}}>{labInfo.email}</div>
+              <div style={{fontWeight:'400'}}>{labInfo.contact}</div>
             </div>
             <div className="info-detail">
               <div>Location</div>
-              <div>{labInfo.addressKr}</div>
-              <div>{labInfo.addressEng}</div>
+              <div style={{fontWeight:'400'}}>{labInfo.addressKr}</div>
+              <div style={{fontWeight:'400'}}>{labInfo.addressEng}</div>
             </div>
             <div className="info-detail">
-              <div>based in</div>
-              <div>{labInfo.basedIn}</div>
+              <div >based in</div>
+              <div style={{fontWeight:'400'}}>{labInfo.basedIn}</div>
             </div>
         </div>
       </div>

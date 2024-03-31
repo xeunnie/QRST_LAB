@@ -1,7 +1,13 @@
 import { fetchContentful } from "@/app/contentful/contentful";
+import { Inter } from "next/font/google";
 import Link from "next/link";
 import Exit from '/public/icons/exit.svg'
 import Pagination from "@/app/component/pagenation";
+
+const inter = Inter({
+    weight : '400',
+    subsets : ['latin'],
+});
 
 export default async function studioInfo(props){
     const id = parseInt(props.params.id);
@@ -20,11 +26,11 @@ export default async function studioInfo(props){
             <div className="project-info-btn">
                 <Link href={`/pages/studiodetail/${id}`}>
                     <span><Exit/></span>
-                    <span>{studio.projectName}</span>
+                    <span style={{fontWeight:'500'}}>{studio.projectName}</span>
                 </Link>
             </div>
             <div className="project-information">
-                <div className="info">
+                <div className="info" style={{fontWeight:'400'}}>
                     <div>
                         <div>Duration</div>
                         <div>
@@ -54,7 +60,7 @@ export default async function studioInfo(props){
                         </div>
                     </div>
                 </div>
-                <div className="statement">
+                <div className={`statement ${inter.className}`}>
                     {studio.statementEng.content && studio.statementEng.content.map((data,index)=>(
                         index===0 ? (
                             <div key={index}>{data.content[0].value}</div>

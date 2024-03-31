@@ -20,8 +20,8 @@ export default async function Studio(){
                                 sizes="100vw"
                             />
                             <div className="project">
-                                <div>{studio.fields.projectName}</div>
-                                <div>{studio.fields.projectSubheading}</div>
+                                <div style={{fontWeight:'500'}}>{studio.fields.projectName}</div>
+                                <div style={{fontWeight:'400'}}>{studio.fields.projectSubheading}</div>
                             </div>
                         </Link>
                     </div>
