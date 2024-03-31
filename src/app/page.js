@@ -10,8 +10,9 @@ export default function Home() {
   const [page, setPage] = useState(0);
   const [isScrolling, setIsScrolling] = useState(false);
   const [textOnOff, setTextOnOff] = useState(true);
-  const [typing, setTyping] = useState("");
-  const [typingOn, setTypingOn]=useState(false);
+  // const [typing, setTyping] = useState("");
+  // const [typingOn, setTypingOn]=useState(false);
+  const [fadeInUp, setFadeInUp]=useState(false);
 
 
   useEffect(()=>{
@@ -85,6 +86,18 @@ export default function Home() {
 
   }, [page]);
 
+  useEffect(()=>{
+    if(page==1){
+      setTimeout(() => {
+        setFadeInUp(true);
+      }, 1000); 
+    }else{
+      setTimeout(() => {
+        setFadeInUp(false);
+      }, 300); 
+    }
+  })
+
   const text1 = "Founded by Prof. Kyuha Shim, Collective QrsT (2022-) within Korea National University of Arts is a practice-based research initiative using computational processes and methods to explore creativity. Rather than just a means, emerging technologies"
   // const text2 = "Collective QRST"
   // const text3 = "는 2022년에 심규하 교수에 의해 창립된 한국예술종합학교 소속으로, 창의성을 탐구하기 위해 컴퓨터 프로세스와 방법을 활용하는 실천 중심의 연구 이니셔티브입니다. 단순히 수단이 아니라, 신기술들을 탐구하고 이를 통해 창의성을 탐험하는 데 중점을 두고 있습니다.";
@@ -132,7 +145,7 @@ export default function Home() {
           </div>
         </div>
         <div className="box screen2" style={{fontWeight:'700'}}>
-          <div className="text draggdisable">
+          <div className={`text draggdisable ${fadeInUp? "fade-in-up":"fade-out"}`}>
             {text5}
             {/* <span className='typed-out' id='typing'>{typing}</span> */}
             {/* <span>_</span> */}

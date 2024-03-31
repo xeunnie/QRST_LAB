@@ -75,6 +75,20 @@ div{
   /* font-family: 'Bold'; */
   z-index: 10;
 }
+.fade-out{
+  opacity: 0;
+}
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(50vh); /* 시작 위치를 설정하세요 */
+  animation: fadeInUp 1.5s forwards;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .draggdisable{
   -webkit-user-select:none;
   -moz-user-select:none;
