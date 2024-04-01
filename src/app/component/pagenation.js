@@ -53,7 +53,7 @@ export default function Pagination({pageName}){
           <MobileMenu/>
           <div className='pagination'>
               <div className='title'><Link href={`/pages/${pageName}`}>{pageName}</Link></div>
-              <div className='icon-wrap'>
+              {/* <div className='icon-wrap'>
                   <Link href="/"><Home/></Link>
                   <span
                       className={isUpVisible ? 'visible' : 'invisible'}
@@ -63,7 +63,7 @@ export default function Pagination({pageName}){
                       className={isDownVisible ? 'visible' : 'invisible'}
                       onClick={handleScrollDown}
                   ><Down/></span>
-              </div>
+              </div> */}
           </div>
         </div>
     )

@@ -36,7 +36,8 @@ div{
 }
   
 .box{
-  width: 100%;
+  /* width: 100%; */
+  width: 100vw;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -103,7 +104,7 @@ div{
   line-height: 2.5vw;
   position: absolute;
   top: 5.7292vw;
-  right: 5.104167vw;
+  right: 8.333vw;
   /* font-family: 'Medium'; */
 }
 .screen3 .clients-logo-wrap{
@@ -116,7 +117,7 @@ div{
   font-size: 3.125vw;
   box-sizing: border-box;
   overflow: auto;
-  padding: 8.1771vw 5vw 8.1771vw 7vw;
+  padding: 8.1771vw 8.333vw 8.1771vw 7vw;
 }
 .screen3 .clients-logo-wrap >div:first-child{
   margin-bottom: 7.778vh;
@@ -126,6 +127,7 @@ div{
   .screen1 .text{
     font-size: 7.778vw;
     padding: 10vw 0vw 12.22vw 7.778vw;
+    color: #FFF;
   }
   .screen2{
     background-color: #0BD060;
@@ -201,6 +203,7 @@ div{
     position: fixed;
     right: 0;
     bottom: 0;
+    z-index: 100;
     /* font-family: 'Regular'; */
   }
   .container .pagination, .background .pagination{
@@ -272,6 +275,13 @@ div{
   .pagination{
     width: 60px;
     height: calc(100vh - 50px);
+    color: #FFF;
+  }
+  .container .pagination, .container .menu{
+    background-color: rgba(0,0,0,0);
+  }
+  .container .pagination .icon-wrap{
+    display: none;
   }
   .background .pagination{
     background-color: #080808;
@@ -339,32 +349,48 @@ div{
   .mobile-menu{display: none;}
   @media screen and (max-width : 834px) {
     header{display: none;}
-    .menu-on{display: block;}
-    .menu-off{display: none;}
+ 
     .mobile-menu{
-      position: absolute;
+      display: block;
+      position: fixed;
       z-index: 10;
-      left: 0; top: 0; right: 0; bottom: 0;
+      top: 0; left: 100%; bottom: 0;
       width: 100vw;
       height: 100vh;
-      background-color: #0BD060;
-      padding-top: 13.3333vw;
-      padding-left: 11.1111vw;
+      background-color: #000;
+      padding-top: 31.007vh;
       box-sizing: border-box;
+      text-align: center;
+      transition: left 0.8s ease;
     }
-    .mobile-menu svg{
+    .menu-on{
+      left: 0;
+    }
+
+    .mobile-menu > svg{
       position: absolute;
       z-index: 20;
       right: 22px;
       top: 22px;
-      fill: #000;
+      fill: #FFF;
       width: 14.26px;
       height: auto;
     }
+    .mobile-menu > div svg{
+      position: absolute;
+      z-index: 20;
+      top: 22px;
+      left: 22px;
+      width: 59px;
+      height: auto;
+      fill: #FFF;
+    }
     .mobile-menu a{
       display: block;
-      font-size: 13.3333vw;
-      margin-bottom: 3vw;
+      font-size: 6.667vw;
+      margin-bottom: 10.8333vw;
+      color: #FFF;
+      font-weight: 700;
     }
     .mobile-menu a:target{
       color: white;

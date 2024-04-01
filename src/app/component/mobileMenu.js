@@ -2,6 +2,7 @@
 
 import Menu from '/public/icons/menu.svg'
 import Exit from '/public/icons/exit.svg'
+import QLogo from '/public/icons/qrst_logo_1.svg'
 import Link from 'next/link';
 import { useState } from 'react';
 
@@ -16,6 +17,7 @@ export default function MobileMenu(props){
             </div>
             <div className={`mobile-menu ${menuOn ? 'menu-on' : 'menu-off'}`}>
                 <Exit onClick={()=>setMenuOn(false)}/>
+                <div><Link href={"/"}><QLogo/></Link></div>
                 <div>
                 <Link href="/pages/studio">STUDIO</Link>
                 <Link href="/pages/lab">LAB</Link>

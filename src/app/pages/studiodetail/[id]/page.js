@@ -1,15 +1,31 @@
+"use client"
 import { fetchContentful } from "@/app/contentful/contentful";
 import Image from "next/image";
 import Plus from '/public/icons/plus.svg'
 import Link from 'next/link';
 import Pagination from "@/app/component/pagenation";
+import { useState, useEffect } from "react";
 
-export default async function stuidoDetail(props){
+export default function stuidoDetail(props){
     const id = parseInt(props.params.id);
-    const data = await fetchContentful('studio');
-    const images = data[id].fields.images;
-    const layout = data[id].fields.layout;
-    const layoutArr = layout.split(',').map(Number);
+    const [images, setImages]=useState([]);
+    const [layout, setLayout]=useState([]);
+
+    useEffect(()=>{
+        const getContentful = async () => {
+            try {
+              var data = await fetchContentful('studio');
+              setImages(data[id].fields.images);
+              setLayout(data[id].fields.layout);
+            } catch (error) {
+              console.error("Error fetching data:", error);
+            }
+          }
+      
+          getContentful();
+    },[]);
+
+    const layoutArr = Array.isArray(layout) ? layout.map(Number) : layout.split(',').map(Number);
     
     const createImageArr =(images, layoutArr)=>{
         const imageArr = [];

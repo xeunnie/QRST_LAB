@@ -1,5 +1,5 @@
 import { fetchContentful } from "@/app/contentful/contentful";
-import { Inter } from 'next/font/google'
+import { Inter } from "next/font/google";
 import Link from "next/link";
 import Exit from '/public/icons/exit.svg'
 import Pagination from "@/app/component/pagenation";
@@ -9,15 +9,15 @@ const inter = Inter({
     subsets : ['latin'],
 });
 
-export default async function labInfo(props){
+export default async function studioInfo(props){
     const id = parseInt(props.params.id);
 
     const data = await fetchContentful('studio');
     const studio = data[id].fields;
-    const syear = studio.durationStart.substring(0, 4);
+    const syear = studio.durationStart.substring(2, 4);
     const smonth = studio.durationStart.substring(5, 7);
     const sdate = studio.durationStart.substring(8,11);
-    const eyear = studio.durationEnd.substring(0, 4);
+    const eyear = studio.durationEnd.substring(2, 4);
     const emonth = studio.durationEnd.substring(5, 7);
     const edate = studio.durationEnd.substring(8,11);
 
@@ -57,10 +57,10 @@ export default async function labInfo(props){
                             {studio.participants && studio.participants.map((data,index)=>(
                                 <div className="list" key={index}>{data}</div>
                             ))}
-                        </div> 
+                        </div>
                     </div>
                 </div>
-                <div className={`${inter.className} statement`}>
+                <div className={`statement ${inter.className}`}>
                     {studio.statementEng.content && studio.statementEng.content.map((data,index)=>(
                         index===0 ? (
                             <div key={index}>{data.content[0].value}</div>
