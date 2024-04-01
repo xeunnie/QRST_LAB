@@ -5,11 +5,18 @@ import Plus from '/public/icons/plus.svg'
 import Link from 'next/link';
 import Pagination from "@/app/component/pagenation";
 import { useState, useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 
 export default function StuidoDetail(props){
     const id = parseInt(props.params.id);
     const [images, setImages]=useState([]);
     const [layout, setLayout]=useState([]);
+
+    useEffect(()=>{
+        Aos.init();
+    });
 
     useEffect(()=>{
         const getContentful = async () => {
@@ -55,7 +62,7 @@ export default function StuidoDetail(props){
                 {imageArray.map((row, rowIndex) => (
                     <div key={rowIndex} className="flex-layout">
                         {row.map((imageURL, colIndex) => (
-                            <span key={colIndex} >
+                            <span key={colIndex} data-aos='fade-up'>
                                 <Image 
                                     alt="..."
                                     src={imageURL} 
