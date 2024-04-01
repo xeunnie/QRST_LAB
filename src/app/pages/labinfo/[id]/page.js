@@ -9,7 +9,7 @@ const inter = Inter({
     subsets : ['latin'],
 });
 
-export default async function studioInfo(props){
+export default async function LabInfo(props){
     const id = parseInt(props.params.id);
 
     const data = await fetchContentful('studio');

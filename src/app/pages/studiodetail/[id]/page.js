@@ -6,7 +6,7 @@ import Link from 'next/link';
 import Pagination from "@/app/component/pagenation";
 import { useState, useEffect } from "react";
 
-export default function stuidoDetail(props){
+export default function StuidoDetail(props){
     const id = parseInt(props.params.id);
     const [images, setImages]=useState([]);
     const [layout, setLayout]=useState([]);
