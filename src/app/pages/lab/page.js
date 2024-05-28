@@ -48,7 +48,7 @@ export default function Lap(){
                     </div>
                 ))}
             </div>
-            <Pagination pageName="studio"/>
+            {/* <Pagination pageName="studio"/> */}
         </div>
     )
 }

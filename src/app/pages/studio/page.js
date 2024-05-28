@@ -48,7 +48,7 @@ export default function Studio(){
                     </div>
                 ))}
             </div>
-            <Pagination pageName="studio"/>
+            {/* <Pagination pageName="studio"/> */}
         </div>
     )
 }

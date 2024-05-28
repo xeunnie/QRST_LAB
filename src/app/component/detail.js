@@ -52,13 +52,13 @@ export default function Detail(props){
     const imageArray = createImageArr(images, layoutArr);
 
     return(
-        <div className="background detail-container" style={{fontWeight:'500'}}>
-            <div className="project-info-btn">
+        <div style={{fontWeight:'500'}}>
+            {/* <div className="project-info-btn">
                 <Link href={`/pages/studioinfo/${id}`}> 
                     <span><Plus/></span>
                     <span>Project Information</span>
                 </Link>
-            </div>
+            </div> */}
             <div className="detail-images-wrap"> 
                 {imageArray.map((row, rowIndex) => (
                     <div key={rowIndex} className="flex-layout">
@@ -75,7 +75,7 @@ export default function Detail(props){
                     </div>
                 ))}
             </div>
-            <Pagination pageName="studio"/>
+            {/* <Pagination pageName="studio"/> */}
         </div>
     )
 }

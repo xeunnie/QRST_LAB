@@ -38,24 +38,27 @@ export default async function People(){
 
     return(
       <div className="background people" style={{fontWeight:'300'}}>
-        <div className="page-title">We are QRST Members</div>
-        <Pagination pageName="people"/>
+        <div className="people-page-title">MEET THE TEAM</div>
+        {/* <Pagination pageName="people"/> */}
+        <div className="lab-leaders" style={{marginBottom:'50px'}}>
+          dnfjdnj
+        </div>
         <div className="members">
           {people && people.map((data,index)=>(
             <div key={index} className="profile">
-              <div className="circle">
+              {/* <div className="circle">
                 <Image 
                   src={'https:'+data.fields.profile.fields.file.url} 
                   alt="..." 
                   width={0} height={0} 
                   sizes="100vw"/>
-              </div>
+              </div> */}
               <div className="name">{data.fields.name}</div>
               <div className={`position ${inter.className}`}>{data.fields.position}</div>
             </div>
           ))}
         </div>
-        <div className="lab-info">
+        {/* <div className="lab-info">
             <div className="lab-logo">
               <Image
                 src={'https:'+labInfo.logo.fields.file.url} 
@@ -78,7 +81,7 @@ export default async function People(){
               <div >based in</div>
               <div style={{fontWeight:'400'}}>{labInfo.basedIn}</div>
             </div>
-        </div>
+        </div> */}
       </div>
     )
 }

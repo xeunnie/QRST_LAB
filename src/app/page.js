@@ -1,10 +1,13 @@
 "use client"
 
 import { useState, useEffect } from 'react';
-import Up from '/public/icons/up.svg'
-import Down from '/public/icons/down.svg'
+import Up from '/public/icons/up.svg';
+import Down from '/public/icons/down.svg';
 import Clients from './component/clients';
 import MobileMenu from './component/mobileMenu';
+import HomeLogo1 from '/public/icons/homeLogo1.svg';
+import HomeLogo2 from '/public/icons/homeLogo2.svg';
+import Logo from '/public/icons/qrst_logo_1.svg';
 
 export default function Home() {
   const [page, setPage] = useState(0);
@@ -15,11 +18,11 @@ export default function Home() {
   const [fadeInUp, setFadeInUp]=useState(false);
 
 
-  useEffect(()=>{
-    setTimeout(() => {
-      setTextOnOff(false);
-    }, 10000); 
-  },[])
+  // useEffect(()=>{
+  //   setTimeout(() => {
+  //     setTextOnOff(false);
+  //   }, 10000); 
+  // },[])
 
   useEffect(() => {
     const handleScroll = (event) => {
@@ -80,9 +83,9 @@ export default function Home() {
     //   setTimeout(startTypingAnimation,1000);
     // } 
     
-    const pagination = document.querySelector('.pagination div');
-    pagination.style.transition = 'top 0.5s ease-in-out';
-    pagination.style.top = `${page * 20}vh`;
+    // const pagination = document.querySelector('.pagination div');
+    // pagination.style.transition = 'top 0.5s ease-in-out';
+    // pagination.style.top = `${page * 20}vh`;
 
   }, [page]);
 
@@ -141,12 +144,14 @@ export default function Home() {
       <div id="wrap" className="wrap">
         <div className="box screen1" style={{fontWeight:'300'}}>
           <div className={`text ${textOnOff?'':'text-off'}`}>
-            {text1}
+            {/* {text1} */}
+            <span className='homelogo1'><HomeLogo1/></span>
+            <span className='homelogo2'><HomeLogo2/></span>
           </div>
         </div>
         <div className="box screen2" style={{fontWeight:'700'}}>
           <div className={`text draggdisable ${fadeInUp? "fade-in-up":"fade-out"}`}>
-            {text5}
+            {/* {text5} */}
             {/* <span className='typed-out' id='typing'>{typing}</span> */}
             {/* <span>_</span> */}
           </div>
@@ -164,13 +169,13 @@ export default function Home() {
         </div>
       </div>
       <MobileMenu page={0}/>
-      <div className="pagination" style={{fontWeight:'400'}}>
+      {/* <div className="pagination" style={{fontWeight:'400'}}>
         <div>Collective QRST</div>
         <div className='icon-wrap'>
           {page !== 0 && <Up onClick={()=>handleScrollTop()} />}
           {page !== 3 && <Down onClick={()=>handleScrollBottom()} />}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

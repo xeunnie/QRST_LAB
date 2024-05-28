@@ -54,10 +54,36 @@ export default function Research(){
     
     return(
         <div className="background">
-            <div className="flex-wrap">
+            <div className="research-flex-wrap">
                 {research && research.map((research,index)=>(
                     <div key={index} className="research-flex-item" ref={index===0 ? refEle : null} data-aos='fade-up'>
                         <span className={index===lightIndex?'light':'dark'}></span>
+                        <div className="research-project-info">
+                            <div className="project-title" style={{fontWeight:'500'}}>{research.fields.projectName}</div>
+                            <div className="research-grid">
+                                <div className="project-subheading" style={{fontWeight:'400'}}>{research.fields.projectSubheading}</div>
+                                <div className="research-statement">
+                                    {/* <div className={inter.className}>
+                                        {research.fields.statementEng && research.fields.statementEng.content.map((data,index)=>(
+                                            index===0 ? (
+                                                <div key={index}>{data.content[0].value}</div>
+                                            ):(
+                                                <div key={index}>&nbsp;&nbsp;&nbsp;{data.content[0].value}</div>
+                                            )  
+                                        ))}
+                                    </div> */}
+                                    <div>
+                                        {research.fields.statementKr && research.fields.statementKr.content.map((data,index)=>(
+                                            index===0 ? (
+                                                <div key={index}>{data.content[0].value}</div>
+                                            ):(
+                                                <div key={index}>&nbsp;&nbsp;&nbsp;&nbsp;{data.content[0].value}</div>
+                                            )  
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div>
                             <Image 
                                 src={'https:'+research.fields.mainImage.fields.file.url} 
@@ -66,34 +92,10 @@ export default function Research(){
                                 sizes="100vw"
                             />
                         </div>
-                        <div>
-                            <div className="project-title" style={{fontWeight:'500'}}>{research.fields.projectName}</div>
-                            <div className="project-subheading" style={{fontWeight:'400'}}>{research.fields.projectSubheading}</div>
-                            <div className="research-statement">
-                                <div className={inter.className}>
-                                    {research.fields.statementEng && research.fields.statementEng.content.map((data,index)=>(
-                                        index===0 ? (
-                                            <div key={index}>{data.content[0].value}</div>
-                                        ):(
-                                            <div key={index}>&nbsp;&nbsp;&nbsp;{data.content[0].value}</div>
-                                        )  
-                                    ))}
-                                </div>
-                                <div>
-                                    {research.fields.statementKr && research.fields.statementKr.content.map((data,index)=>(
-                                        index===0 ? (
-                                            <div key={index}>{data.content[0].value}</div>
-                                        ):(
-                                            <div key={index}>&nbsp;&nbsp;&nbsp;&nbsp;{data.content[0].value}</div>
-                                        )  
-                                    ))}
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 ))}
             </div>
-            <Pagination pageName="research"/>
+            {/* <Pagination pageName="research"/> */}
         </div>
     )
 }

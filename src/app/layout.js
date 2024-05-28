@@ -21,10 +21,10 @@ export default function RootLayout({ children }) {
         {children}
         <header>
           <nav style={{fontWeight:'400'}}>
-            <Link href="/pages/studio">studio</Link>
-            <Link href="/pages/lab">lab</Link>
-            <Link href="/pages/research">research</Link>
-            <Link href="/pages/people">people</Link>
+            <Link href="/">about</Link>
+            <Link href="/pages/studio">work</Link>
+            <Link href="/pages/research">service</Link>
+            <Link href="/pages/people">contact</Link>
           </nav>
         </header>
       </body>
