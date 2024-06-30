@@ -20,7 +20,7 @@ div{
 
 .container{
   box-sizing: border-box;
-  padding-right: 3.2292vw;
+  /* padding-right: 3.2292vw; */
   width: 100vw;
   height: 100vh;
   border: 0;
@@ -45,7 +45,10 @@ div{
   overflow: hidden;
   background-color: #000;
 }
-.box:nth-child(1){background-color: lightblue;}
+.box:nth-child(1){
+  /* background-color: lightblue; */
+  background: transparent;
+}
 
 .text{
   color: #0BD060;
@@ -241,7 +244,7 @@ div{
     top: 0;
   }
   .container .menu, .background .menu{
-    background-color: #0BD060;
+    /* background-color: #0BD060; */
   }
   .menu svg{display: none;}
   .pagination .title{
@@ -844,3 +847,5 @@ iframe {
   width: 100%;
   height: auto;
 }
+
+

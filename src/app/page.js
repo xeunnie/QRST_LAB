@@ -143,11 +143,17 @@ export default function Home() {
     <div className='container'>
       <div id="wrap" className="wrap">
         <div className="box screen1" style={{fontWeight:'300'}}>
-          <div className={`text ${textOnOff?'':'text-off'}`}>
-            {/* {text1} */}
+          <div className="back">
+            <div class="video">
+              <div class="video-container">
+                <iframe width="100%" height="100%" src="https://player.vimeo.com/video/943290776?h=418825d23d" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          {/* <div className={`text ${textOnOff?'':'text-off'}`}>
             <span className='homelogo1'><HomeLogo1/></span>
             <span className='homelogo2'><HomeLogo2/></span>
-          </div>
+          </div> */}
         </div>
         <div className="box screen2" style={{fontWeight:'700'}}>
           <div className={`text draggdisable ${fadeInUp? "fade-in-up":"fade-out"}`}>
