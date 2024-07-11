@@ -1,0 +1,52 @@
+.research-flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6.5104vw;
+    padding: 13.0312vw 13.542vw 55vh 13.542vw;
+  }
+  .research-flex-item{
+    width: 100%;
+    position: relative;
+    color: #FFF;
+  }
+  .research-flex-item > div{
+    width: 100%;
+  }
+  .research-flex-item img{
+    width: 100%;
+    height: auto;
+  }
+  .project-title{
+    font-weight :500;
+    font-size: 1.5625vw;
+    text-transform: uppercase;
+    padding-bottom: 1.4063vw;
+    margin-bottom: 2.891vw;
+    border-bottom: solid white 0.1042vw;
+  }
+  .project-subheading{
+    font-size: 2.0833vw;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+  }
+  .research-statement{
+    font-size: 1.1458vw;
+    font-family: 'Pretendard-Light'
+  }
+  .research-statement >div:first-child{
+    line-height: 1.3542vw;
+  }
+  .research-statement >div:last-child{
+    line-height: 1.4583vw;
+  }
+  .research-statement > div{
+    width: 100%;
+  }
+  .research-project-info{
+    margin-bottom: 4.1042vw;;
+  }
+  .research-grid{
+    display: grid;
+    grid-template-columns: 38.4783% 45.6522%;
+    gap: 15.9420%;
+  }

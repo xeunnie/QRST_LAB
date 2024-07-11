@@ -1,0 +1,32 @@
+@import url('movepage.css');
+@import url('projectinfo.css');
+@import url('detail.css');
+
+.detail-back{
+    padding: 13.5417vw 0;
+    color: #FFF;
+  }
+  .detail-side{
+    padding: 0 13.5417vw 0;
+    box-sizing: border-box;
+  }
+  .projectName{
+    font-size: 1.5625vw;
+    text-align: center;
+    margin-bottom: 2.5521vw;
+  }
+  .mainImage{
+    width: 100vw;
+    height: auto;
+    margin-bottom: 4.0104vw;
+  }
+  .mainImage img{
+    width: 100%;
+    height: auto;
+  }
+
+
+
+
+
+

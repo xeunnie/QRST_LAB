@@ -1,0 +1,164 @@
+@import url('screen1.css');
+@import url('screen2.css');
+@import url('screen3.css');
+@import url('mobileMenu.css');
+
+.container{
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    border: 0;
+    overflow: hidden;
+  }
+    
+  .wrap{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+  }
+    
+  .box{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #000;
+  }
+  .box:nth-child(1){
+    background: transparent;
+  }
+  
+  .text{
+    box-sizing: border-box;
+    word-break: keep-all;
+  }
+
+
+/* screen1 */
+  /* .homelogo1{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .homelogo2{
+    position: absolute;
+    bottom: -25px;
+    right: -200px;
+  } */
+
+/* screen2 */
+.fade-out{
+    opacity: 0;
+  }
+  .fade-in-up {
+    opacity: 1;
+    transform: translateY(50vh); 
+    animation: fadeInUp 1.5s forwards;
+  }
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .draggdisable{
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none
+  }
+
+  /* .screen2{
+    color:white;
+    padding: 12.0625vw 14.0625vw 14.0625vw 14.0625vw;
+    box-sizing: border-box;
+  }
+  .screen2 > div{
+    width: 100%;
+    height: 100%;
+  }
+  .screen2 > div >div:nth-of-type(1){
+    font-size: 1.5vw;
+    border-bottom: #FFF solid 0.1042vw;
+    margin-bottom: 3.85802vw;
+    padding-bottom: 1.3vw;
+  }
+  .screen2 > div > div:nth-of-type(2){
+    display: grid;
+    grid-template-columns: 37.5% 45%;
+    gap: 4.5vw 17.5% ;
+  }
+  .screen2 >div > div:nth-of-type(2)>div{
+    width: 100%;
+    height: auto;
+  }
+  .screen2 >div > div:nth-of-type(2) >div:nth-of-type(1), .screen2 >div > div:nth-of-type(2) >div:nth-of-type(3){
+    font-size: 2vw;
+  }
+  .screen2 >div > div:nth-of-type(2) >div:nth-of-type(2), .screen2 >div > div:nth-of-type(2) >div:nth-of-type(4){
+    font-size: 1.1458vw;
+    font-family: 'Pretendard-Light';
+    line-height: 1.9792vw;
+    word-break: break-all;
+  } */
+
+/* 
+  .screen3{
+    position: relative; 
+    color: #FFF;
+  }
+  .screen3 .text{
+    width: 30.9896vw;
+    height: 10vw;
+    font-size: 1.3542vw;
+    line-height: 2.5vw;
+    position: absolute;
+    top: 14.0625vw;
+    left: 14.0625vw;
+    box-sizing: border-box;
+  }
+  .screen3 .clients-logo-wrap{
+    position: absolute;
+    width: 71.875%;
+    text-transform: uppercase;
+    font-size: 2.0833vw;
+    box-sizing: border-box;
+    overflow: auto;
+    left: 14.0625vw;
+    top: 30.3958vw;
+  }
+  .screen3 .clients-logo-wrap >div:first-child{
+    margin-bottom: 7.778vh;
+  }
+  @media screen and (max-width:834px) {
+    .screen1 .text{
+      font-size: 7.778vw;
+      padding: 10vw 0vw 12.22vw 7.778vw;
+      color: #FFF;
+    }
+    .screen2{
+      background-color: #0BD060;
+    }
+    .screen2 .text{
+      color: #000;
+      font-size: 8.333vw;
+      font-weight: 700;
+      padding: 13.611vw 0vw 13.611vw 7.778vw;
+    }
+    .screen3 .text{
+      width: 69.444vw;
+      font-size: 4.722vw;
+      line-height: 6.667vw;
+    }
+    .screen3 .clients-logo-wrap >div:first-child{
+      font-size: 7.778vw;
+    }
+    .container{
+      padding-right: 60px;
+    }
+  } */
+  

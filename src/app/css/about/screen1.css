@@ -1,0 +1,28 @@
+.screen1{
+    box-sizing: border-box ;
+  }
+  .screen1 .text{
+    border: 1px red solid;
+    font-size: 4.1667vw;
+    height: 100%;
+    transition: transform 1.3s ease-out, opacity 1.3s ease-out;
+    opacity: 1;
+    position: relative;
+    width: 71.7188vw;
+    height: 498px;
+  }
+  .screen1 .text-off{
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  .homelogo1{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .homelogo2{
+    position: absolute;
+    bottom: -25px;
+    right: -200px;
+  }

@@ -1,0 +1,23 @@
+/* menu bar */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 3.2292vw;
+    z-index: 10;
+    text-align: center;
+  }
+  header nav{
+    margin-top: 2.0313vw;
+    font-size: 1.0427vw;
+    text-transform: uppercase;
+    color: #FFF;
+  }
+  header nav a{
+    margin-left: 3.2292vw;
+  }
+  header nav a{
+    color: #FFF;
+  }

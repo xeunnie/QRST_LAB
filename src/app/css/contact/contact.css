@@ -1,0 +1,75 @@
+.people{
+    padding: 14.0625vw 13.5417vw 46.8229vw 13.5417vw;
+    color: #FFF;
+  }
+  .people-page-title{
+    margin-bottom: 4.0625vw;
+    font-size: 1.3625vw;
+    border-bottom: 1px solid #FFF;
+    padding-bottom: 1vw;
+  }
+  .lab-leaders{
+    margin-bottom: 7.8646vw;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 6.4063vw 5.521vw;
+  }
+  .lab-leaders .leader{
+  }
+  .lab-leaders .leader .name{
+    font-size: 2vw;
+    margin-bottom: 1.4359vw;
+  }
+  .lab-leaders .leader .position{
+    font-size: 1.3021vw;
+    margin-bottom: 2.6281vw;
+    color: #818181;
+  }
+  .lab-leaders .leader .intro{
+    font-size: 1.25vw;
+    color: #818181;
+    margin-bottom: 1.9792vw;
+    font-family: 'Pretendard-Regular';
+  }
+  
+  .lab-leaders .leader .careers{
+    color: #818181;
+    font-size: 1.25vw;
+    font-family: 'Pretendard-Regular';
+  
+  }
+  .lab-leaders .leader .career{
+    margin-bottom: 1.9792vw;
+  }
+  .members{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    gap: 19.3713%;
+    
+  }
+  .profile{
+    width: 20.4191%;
+    margin-bottom: 6.8229vw;
+  }
+  .circle{
+    width: 12.5vw;
+    height: 12.5vw;
+    margin-bottom: 1.0417vw;
+    overflow: hidden;
+  }
+  .circle img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+  .profile .name{
+    font-size: 1.8229vw;
+    text-transform: capitalize;
+    margin-bottom: 1vw;
+  }
+  .profile .position{
+    font-size: 1.3021vw;
+    color: #989898;
+  }

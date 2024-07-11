@@ -1,0 +1,20 @@
+.move_page_container{
+    margin-top: 13.692vw;
+  }
+  .move_page_container :first-child{
+    text-transform: uppercase;
+    margin-bottom: 3.0448vw;
+    font-size: 1.69vw;
+  }
+  .move_page{
+    width: 100%;
+    height: auto;
+    display: grid;
+    gap: 5%;
+    grid-template-columns: auto auto;
+  
+  }
+  .move_page img{
+    width: 100%;
+    height: auto;
+  }

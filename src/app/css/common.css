@@ -1,0 +1,31 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #080808;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+img{padding: 0;margin: 0;}
+
+div{
+  word-wrap: break-word;
+  word-break: keep-all;
+}
+header nav{
+  font-family: 'Pretendard-700';
+}
+
+
+.background{
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #000;
+  box-sizing: border-box;
+}
+@media screen and (max-width : 834px) {
+  .background{
+    padding-right: 60px;
+  }
+}
