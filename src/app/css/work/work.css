@@ -5,7 +5,7 @@
     padding: 14.0312vw 13.542vw 14.0312vw 13.542vw;
   }
   .flex-item{
-    width: calc((100% - 2.0833vw) / 2);
+    width: calc((100% - 1.4828vw) / 2);
     position: relative;
   }
   .flex-item img{
@@ -25,13 +25,9 @@
     text-transform: uppercase;
   }
   .project >div:first-child{
-    font-size: 0.9375vw;
-  }
-  .flex-item:hover .project >div:first-child{
     font-size: 1.25vw;
-    font-weight: 500;
   }
-  .flex-item:hover .project >div:nth-of-type(2){
+  .project >div:nth-of-type(2){
     font-size: 0.9896vw;
     line-height: 1.25vw;
     margin-top: 0.4vw;

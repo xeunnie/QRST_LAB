@@ -84,7 +84,7 @@ export default function Home() {
           <Screen1/>
         </div>
         <div className="box screen2">
-          <div className={`draggdisable ${fadeInUp? "fade-in-up":"fade-out"}`}>
+          <div className={`draggdisable center ${fadeInUp? "fade-in-up":"fade-out"}`}>
             <Screen2/>
           </div>
         </div>

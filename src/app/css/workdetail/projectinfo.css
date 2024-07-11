@@ -1,5 +1,5 @@
 /* projectinfo.js */
-.project-information{
+.work-detail-information{
     width: 100%;
     display: grid;
     grid-template-columns: 24.5% auto auto;
@@ -7,28 +7,25 @@
     margin-bottom: 7.2396vw;
     color: #FFF;
   }
-  .project-information .info{
+  .work-detail-information .info{
     display: flex;
     flex-direction: column;
     font-size: 0.84375vw;
   }
-  .project-information .info >div{
+  .work-detail-information .info >div{
     display: grid;
     grid-template-columns: 5.0521vw auto;
     gap: 0.8854vw;
     margin-bottom: 1.0417vw;
   }
-  .project-information .info >div >div:nth-of-type(2){
-    text-transform: uppercase;
+  .work-detail-information .info >div>div:nth-of-type(1){
+    color: #818181;
   }
-  .project-information .info >div>div:nth-of-type(1){
-    opacity: 0.5;
-  }
-  .project-information >div:nth-of-type(2){
+  .work-detail-information >div:nth-of-type(2){
     font-size: 0.8333vw;
     line-height: 1.3542vw;
   }
-  .project-information >div:nth-of-type(3){
+  .work-detail-information >div:nth-of-type(3){
     font-size: 0.8333vw;
     line-height: 1.4583vw;
     font-family: 'Pretendard-400';

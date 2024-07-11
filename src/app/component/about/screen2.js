@@ -6,7 +6,7 @@ const inter400 = Inter({ weight: '400', subsets: ['latin'] });
 export default function Screen2(){
 
     return(
-        <div>
+        <div className='about-screen2-container'>
             <div className={inter500.className}>WHO WE ARE</div>
             <div>
               <div className={inter400.className}>QrsT established in 2015 at Carnegie Mellon University</div>

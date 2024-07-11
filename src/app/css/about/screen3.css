@@ -1,19 +1,26 @@
 
 .screen3{
-    position: relative; 
-    color: #FFF;
-  }
-  .screen3 .text{
-    width: 30.9896vw;
-    height: 10vw;
-    font-size: 1.3542vw;
-    line-height: 2.5vw;
-    position: absolute;
-    top: 14.0625vw;
-    left: 14.0625vw;
-    box-sizing: border-box;
-  }
-  .screen3 .clients-logo-wrap{
+  position: relative; 
+  color: #FFF;
+  width: 100%;
+}
+.about-screen3-container{
+  width: 72.875%;
+  height: auto;
+}
+.about-screen3-container .clients-statement{
+  position: absolute;
+  top: 25vh;
+  width: 30vw;
+  font-size: 1.3865vw;
+  margin-bottom: 5.78125vw;
+}
+.about-screen3-container  .clients-logo-wrap >div:first-child{
+  font-size: 2.0833vw;
+  text-transform: uppercase;
+}
+
+  /* .screen3 .clients-logo-wrap{
     position: absolute;
     width: 71.875%;
     text-transform: uppercase;
@@ -25,7 +32,9 @@
   }
   .screen3 .clients-logo-wrap >div:first-child{
     margin-bottom: 7.778vh;
-  }
+  } */
+
+
   @media screen and (max-width:834px) {
     .screen1 .text{
       font-size: 7.778vw;

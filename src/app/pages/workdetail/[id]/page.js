@@ -4,7 +4,6 @@ import Detail from "@/app/component/workdetail/detail";
 import Image from "next/image";
 import { fetchContentful } from "@/app/contentful/contentful";
 import ProjectInfo from "@/app/component//workdetail/projectInfo";
-import Link from "next/link";
 import { Inter } from 'next/font/google';
 import MovePage from "@/app/component/workdetail/movepage";
 

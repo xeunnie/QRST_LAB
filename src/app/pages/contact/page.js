@@ -2,8 +2,6 @@
 // import { useEffect, useState } from "react"
 import { fetchContentful } from "@/app/contentful/contentful"
 import { Inter } from "next/font/google";
-// import Pagination from "@/app/component/pagenation";
-import Image from "next/image";
 import { Space_Grotesk } from 'next/font/google'
 
 const inter500 = Inter({ weight: '500', subsets: ['latin'] });

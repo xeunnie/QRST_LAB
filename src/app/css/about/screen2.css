@@ -1,31 +1,40 @@
 .screen2{
     color:white;
-    padding: 12.0625vw 14.0625vw 14.0625vw 14.0625vw;
     box-sizing: border-box;
   }
   .screen2 > div{
     width: 100%;
     height: 100%;
   }
-  .screen2 > div >div:nth-of-type(1){
+  .center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-screen2-container{
+    width: 71.875%;
+  }
+  .about-screen2-container > div:nth-of-type(1){
     font-size: 1.5vw;
     border-bottom: #FFF solid 0.1042vw;
     margin-bottom: 3.85802vw;
     padding-bottom: 1.3vw;
   }
-  .screen2 > div > div:nth-of-type(2){
+  .about-screen2-container > div:nth-of-type(2){
     display: grid;
-    grid-template-columns: 37.5% 45%;
-    gap: 4.5vw 17.5% ;
+    grid-template-columns: 37.5% 44%;
+    gap: 4.5vw 18.5% ;
   }
-  .screen2 >div > div:nth-of-type(2)>div{
+  .about-screen2-container > div:nth-of-type(2) > div{
     width: 100%;
     height: auto;
   }
-  .screen2 >div > div:nth-of-type(2) >div:nth-of-type(1), .screen2 >div > div:nth-of-type(2) >div:nth-of-type(3){
-    font-size: 2vw;
+  .about-screen2-container > div:nth-of-type(2) >div:nth-of-type(1), 
+  .about-screen2-container > div:nth-of-type(2) >div:nth-of-type(3){
+    font-size: 2.0833vw;
   }
-  .screen2 >div > div:nth-of-type(2) >div:nth-of-type(2), .screen2 >div > div:nth-of-type(2) >div:nth-of-type(4){
+  .about-screen2-container > div:nth-of-type(2) >div:nth-of-type(2), 
+  .about-screen2-container > div:nth-of-type(2) >div:nth-of-type(4){
     font-size: 1.1458vw;
     font-family: 'Pretendard-Light';
     line-height: 1.9792vw;

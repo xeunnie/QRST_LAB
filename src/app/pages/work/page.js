@@ -9,8 +9,8 @@ import "aos/dist/aos.css";
 
 import { Inter } from 'next/font/google';
 
-const inter500 = Inter({ weight: '500', subsets: ['latin'] });
 const inter400 = Inter({ weight: '400', subsets: ['latin'] });
+const inter300 = Inter({ weight: '300', subsets: ['latin'] });
 
 export default function Work(){
 
@@ -46,8 +46,8 @@ export default function Work(){
                                 sizes="100vw"
                             />
                             <div className="project">
-                                <div className={inter500.className}>{studio.fields.projectName}</div>
-                                <div className={inter400.className}>{studio.fields.projectSubheading}</div>
+                                <div className={inter400.className}>{studio.fields.projectName}</div>
+                                <div className={inter300.className}>{studio.fields.projectSubheading}</div>
                             </div>
                         </Link>
                     </div>

@@ -1,7 +1,7 @@
 import { fetchContentful } from "@/app/contentful/contentful";
 import { Inter } from 'next/font/google';
 
-const inter400 = Inter({ weight: '400', subsets: ['latin'] });
+const inter300 = Inter({ weight: '300', subsets: ['latin'] });
 
 export default async function ProjectInfo(props){
 
@@ -17,9 +17,9 @@ export default async function ProjectInfo(props){
     const edate = studio.durationEnd.substring(8,11);
 
     return(
-        <div className="project-information">
-                <div className={inter400.className} style={{fontWeight:'400'}}>
-                    <div className={inter400.className}>
+        <div className="work-detail-information">
+                <div className={`info ${inter300.className}`}>
+                    <div className={inter300.className}>
                         <div>Duration</div>
                         <div>
                             <span>{syear}. {smonth}. {sdate}</span>
@@ -48,24 +48,22 @@ export default async function ProjectInfo(props){
                         </div>
                     </div>
                 </div>
-                <div className={`statement ${inter400.className}`}>
+                <div className={`statement ${inter300.className}`}>
                     {studio.statementEng.content && studio.statementEng.content.map((data,index)=>(
-                        <div key={index}>{data.content[0].value}</div>
-                        // index===0 ? (
-                        //     <div key={index}>{data.content[0].value}</div>
-                        // ):(
-                        //     <div key={index}>&nbsp;&nbsp;&nbsp;{data.content[0].value}</div>
-                        // )  
+                        index===0 ? (
+                            <div key={index}>{data.content[0].value}</div>
+                        ):(
+                            <div key={index}><br/>{data.content[0].value}</div>
+                        )  
                     ))}
                 </div>
                 <div className="statement">
                     {studio.statementKr.content && studio.statementKr.content.map((data,index)=>(
-                        <div key={index}>{data.content[0].value}</div>
-                        // index===0 ? (
-                        //     <div key={index}>{data.content[0].value}</div>
-                        // ):(
-                        //     <div key={index}>&nbsp;&nbsp;&nbsp;&nbsp;{data.content[0].value}</div>
-                        // )  
+                        index===0 ? (
+                            <div key={index}>{data.content[0].value}</div>
+                        ):(
+                            <div key={index}><br/>{data.content[0].value}</div>
+                        )  
                     ))}
                 </div>
             </div>
