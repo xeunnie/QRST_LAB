@@ -13,11 +13,14 @@ header{
     margin-top: 2.0313vw;
     font-size: 1.0427vw;
     text-transform: uppercase;
-    color: #FFF;
   }
   header nav a{
     margin-left: 3.2292vw;
   }
   header nav a{
-    color: #FFF;
+    color: #818181;
   }
+
+.active{
+  color: #FFF;
+}
