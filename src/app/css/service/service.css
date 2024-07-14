@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 6.5104vw;
-    padding: 13.0312vw 13.542vw 55vh 13.542vw;
+    padding: 13.0312vw 13.542vw 30vh 13.542vw;
   }
   .research-flex-item{
     width: 100%;
@@ -16,6 +16,9 @@
     width: 100%;
     height: auto;
   }
+  .research-project-info{
+    margin-bottom: 4.1042vw;;
+  }
   .project-title{
     font-weight :500;
     font-size: 1.5625vw;
@@ -23,6 +26,11 @@
     padding-bottom: 1.4063vw;
     margin-bottom: 2.891vw;
     border-bottom: solid white 0.1042vw;
+  }
+  .research-grid{
+    display: grid;
+    grid-template-columns: 38.4783% 45.6522%;
+    gap: 15.9420%;
   }
   .project-subheading{
     font-size: 2.0833vw;
@@ -35,18 +43,62 @@
   }
   .research-statement >div:first-child{
     line-height: 1.3542vw;
-  }
-  .research-statement >div:last-child{
-    line-height: 1.4583vw;
-  }
-  .research-statement > div{
     width: 100%;
   }
-  .research-project-info{
-    margin-bottom: 4.1042vw;;
+  
+
+  @media screen and (max-width: 1440px) {
+    .research-flex-wrap{
+      padding: 34.125vw 9.5vw 34.125vw;
+      gap: 36.944vw;
+    }
+    .research-project-info{
+      margin-bottom: 9.375vw;
+    }
+    .project-title{
+      font-size: 3.125vw;
+      padding-bottom: 1.4063vw;
+      margin-bottom: 7vw;
+    }
+    .research-grid{
+      display: block;
+    }
+    .project-subheading{
+      font-size: 3.75vw;
+      margin-bottom: 4.375vw;
+    }
+    .research-statement{
+      font-size: 2.75vw;
+    }
+    .research-statement >div:first-child{
+      line-height:  4.75vw;
+    }
   }
-  .research-grid{
-    display: grid;
-    grid-template-columns: 38.4783% 45.6522%;
-    gap: 15.9420%;
+
+  @media screen and (max-width: 744px) {
+    .research-flex-wrap{
+      padding: 34.125vw 8.333vw 34.125vw;
+    }
+    .research-project-info{
+      margin-bottom: 11.9444vw;
+    }
+    .project-title{
+      font-size: 4.444vw;
+      padding-bottom: 0;
+      margin-bottom: 6.9444vw;
+      border-bottom: none;
+    }
+    .research-grid{
+      display: block;
+    }
+    .project-subheading{
+      font-size: 6.667vw;
+      margin-bottom: 9.1667vw;
+    }
+    .research-statement{
+      font-size: 4.444vw;
+    }
+    .research-statement >div:first-child{
+      line-height:  6.5vw;
+    }
   }

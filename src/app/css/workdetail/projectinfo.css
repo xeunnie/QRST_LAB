@@ -1,12 +1,14 @@
 /* projectinfo.js */
 .work-detail-information{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 24.5% auto auto;
-    gap: 4.8571%;
-    margin-bottom: 7.2396vw;
-    color: #FFF;
-  }
+  padding: 0 13.5417vw 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 24.5% auto auto;
+  gap: 4.8571%;
+  margin-bottom: 7.2396vw;
+  color: #FFF;
+  box-sizing: border-box;
+}
   .work-detail-information .info{
     display: flex;
     flex-direction: column;
@@ -18,7 +20,9 @@
     gap: 0.8854vw;
     margin-bottom: 1.0417vw;
   }
-  .work-detail-information .info >div>div:nth-of-type(1){
+  .work-detail-information 
+  .info 
+  >div>div:nth-of-type(1){
     color: #818181;
   }
   .work-detail-information >div:nth-of-type(2){
@@ -34,3 +38,67 @@
     margin-bottom: 0.3646vw;
   }
   .list:last-child{margin-bottom: 0;}
+
+  @media screen and (max-width:1440px) {
+    .work-detail-information{
+      padding: 0 9.375vw 0;
+      display: block;
+      margin-bottom: 11.9225vw;
+    }
+    .work-detail-information .info{
+      font-size: 2vw;
+    }
+    .work-detail-information .info >div{
+      grid-template-columns: 14.25vw auto;
+      gap: 0vw;
+      margin-bottom: 2.6125vw;
+    }
+    .work-detail-information >div:nth-of-type(1){
+      margin-bottom: 9.4vw;
+    }
+    .work-detail-information >div:nth-of-type(2){
+      font-size: 2vw;
+      line-height: 3.25vw;
+      margin-bottom: 9.4125vw;
+    }
+    .work-detail-information >div:nth-of-type(3){
+      font-size: 2vw;
+      line-height: 3.5vw;
+      margin-bottom: 11.9225vw;
+    }
+    .list{
+      margin-bottom: 0.625vw;
+    }
+  }
+
+  @media screen and (max-width:744px) {
+    .work-detail-information{
+      padding: 0 11.111vw 0;
+      display: block;
+      margin-bottom: 13.055vw;
+    }
+    .work-detail-information .info{
+      font-size: 3.6111vw;
+    }
+    .work-detail-information .info >div{
+      grid-template-columns: 30.8333vw auto;
+      gap: 0vw;
+      margin-bottom: 3.7222vw;
+    }
+    .work-detail-information >div:nth-of-type(1){
+      margin-bottom: 15.8333vw;
+    }
+    .work-detail-information >div:nth-of-type(2){
+      font-size: 3.6111vw;
+      line-height: 5.278vw;
+      margin-bottom: 8.0556vw;
+    }
+    .work-detail-information >div:nth-of-type(3){
+      font-size: 3.6111vw;
+      line-height: 6.125vw;
+      margin-bottom: 13.0556vw;
+    }
+    .list{
+      margin-bottom: 0.625vw;
+    }
+  }

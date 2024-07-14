@@ -3,26 +3,58 @@
   }
   .screen1 .text{
     /* border: 1px red solid; */
-    font-size: 4.1667vw;
-    height: 100%;
     transition: transform 1.3s ease-out, opacity 1.3s ease-out;
     opacity: 1;
     position: relative;
     width: 71.7188vw;
     height: 498px;
   }
-  .screen1 .text-off{
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-
   .homelogo1{
     position: absolute;
     top: 0;
     left: 0;
+    width: 962px;
+    height: auto;
   }
   .homelogo2{
     position: absolute;
     bottom: -25px;
     right: -200px;
+    width: 955px;
+    height: auto;
   }
+  @media screen and (max-width : 1440px){
+    .screen1 .text{
+      width: 83.25vw;
+      height: 261px;
+    }
+    .homelogo1{
+      width: 508px;
+      height: auto;
+    }
+    .homelogo2{
+      bottom: -10px;
+      right: -100px;
+      width: 500px;
+      height: auto;
+    }
+  }
+
+  @media screen and (max-width : 744px){
+    .screen1 .text{
+      width: 71.944vw;
+    }
+    .homelogo1{
+      width: 259px;
+      /* width: 71.9444vw; */
+      height: auto;
+    }
+    .homelogo2{
+      bottom: 125px;
+      right: -48px;
+      width: 233px;
+      height: auto;
+    }
+  }
+
+  /* 로고 스르륵 사라지는 효과 추가하기 */

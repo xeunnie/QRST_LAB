@@ -6,6 +6,7 @@ import Image from "next/image"
 import { useEffect,useState} from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Footer from '/public/icons/footer.svg'
 
 const inter600 = Inter({ weight: '600', subsets: ['latin'] });
 const inter500 = Inter({ weight: '500', subsets: ['latin'] });
@@ -63,6 +64,9 @@ export default function Service(){
                         </div>
                     </div>
                 ))}
+            </div>
+            <div className="footer">
+                <Footer/>
             </div>
         </div>
     )

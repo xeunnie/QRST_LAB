@@ -4,19 +4,26 @@
     flex-wrap: wrap;
     gap: 2.0357%;
     margin-bottom: 2.0357%;
-  }
-  .flex-layout span{
+}
+.flex-layout span{
     flex: 1 1 40%;
-  }
-  .flex-layout span img{
+}
+.flex-layout span img{
     width: 100%;
     height: auto;
+}
+
+  @media screen and (max-width : 1440px) {
+    .flex-layout{
+      gap: 1.8462vw;
+    }
   }
-  @media screen and (max-width : 834px) {
+
+  @media screen and (max-width : 744px) {
+    .flex-layout{
+      gap: 2.453vw;
+    }
     .flex-layout span{
       flex: 1 1 100%;
-    }
-    .detail-images-wrap{
-      margin-top: 8.8889vw;
     }
   }

@@ -1,6 +1,6 @@
 import { Inter } from 'next/font/google';
 
-const inter400 = Inter({ weight: '400', subsets: ['latin'] });
+const inter = Inter({ subsets: ['latin'] });
 const inter300 = Inter({ weight: '300', subsets: ['latin'] });
 
 export default function Screen3(){
@@ -11,7 +11,7 @@ export default function Screen3(){
         <div className='about-screen3-container'>
             <div className={`clients-statement ${inter300.className}`}>{text4}</div>
             <div className='clients-logo-wrap'>
-              <div className={inter400.className}>our clients</div>
+              <div className={inter.className}>our clients</div>
               <div className='clients-list'>
                 {/* <Clients/> */}
               </div>

@@ -24,8 +24,24 @@ header nav{
   background-color: #000;
   box-sizing: border-box;
 }
-@media screen and (max-width : 834px) {
-  .background{
-    padding-right: 60px;
+
+.footer{
+  width: 35.5729vw;
+  margin-left: 50%;
+  transform: translate(-50%);
+  margin-bottom: 4.3229vw;
+}
+
+@media screen and (max-width: 1400px) {
+  .footer{
+    width: 68.125vw;
+    margin-bottom: 6.34vw;
+  }
+}
+
+@media screen and (max-width: 744px) {
+  .footer{
+    width: 83.6111vw;
+    margin-bottom: 16.111vw;
   }
 }

@@ -37,11 +37,44 @@
     display: block;
     background-color: rgba(0,0,0,0.8);
   }
-  @media screen and (max-width : 834px) {
+  
+  @media screen and (max-width : 1440px) {
     .flex-wrap{
-      padding: 8.333vw 4.7222vw 8.333vw 7.7778vw;
+      gap: 4.0825vw;
+      padding: 33.5vw 7.125vw 33.5vw 7.125vw;
     }
     .flex-item{
       width: 100%;
     }
+    .project{
+        padding: 3.7662vw 4.9812vw;
+    }
+    .project >div:first-child{
+        font-size: 3vw;
+    }
+    .project >div:nth-of-type(2){
+        font-size: 2.375vw;
+        margin-top: 1.58vw;
+      }
+}
+
+@media screen and (max-width : 744px) {
+  .flex-wrap{
+    gap: 6.666vw;
+    padding: 39.1667vw 8.6111vw;
   }
+  .project{
+    position: static;
+    display: block;
+    padding: 2.3vw 0 0;
+    height: auto;
+  }
+  .project >div:first-child{
+    font-size: 4.305vw;
+  }
+  .project >div:nth-of-type(2){
+    font-size: 2.5vw;
+    line-height: 3.6111vw;
+    margin-top: 0.3vw;
+  }
+}

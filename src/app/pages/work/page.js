@@ -3,7 +3,7 @@ import { fetchContentful } from "@/app/contentful/contentful"
 import { useState, useEffect } from "react";
 import Image from "next/image"
 import Link from "next/link";
-// import Pagination from "@/app/component/pagenation";
+import Footer from '/public/icons/footer.svg'
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -52,6 +52,9 @@ export default function Work(){
                         </Link>
                     </div>
                 ))}
+            </div>
+            <div className="footer">
+                <Footer/>
             </div>
             {/* <Pagination pageName="studio"/> */}
         </div>

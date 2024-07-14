@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import MobileMenu from './component/navigation/mobileMenu';
+import Footer from '/public/icons/footer.svg'
 import Screen1 from './component/about/screen1';
 import Screen2 from './component/about/screen2';
 import Screen3 from './component/about/screen3';
@@ -94,7 +95,7 @@ export default function Home() {
         <div className="box screen4">
         </div>
       </div>
-      <MobileMenu page={0}/>
+      {/* <div className='footer'><Footer/></div> */}
     </div>
   );
 }

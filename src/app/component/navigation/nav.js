@@ -17,7 +17,7 @@ export default function Nav(){
     return(
         <div>
           <header>
-            <nav className={space_grotesk600.className}>
+            <nav className={`${space_grotesk600.className} nav-bar`}>
               <Link href="/" 
                 className={activeButton==='active' ? 'active':''}
                 onClick={()=>clickNavButton('active')}>

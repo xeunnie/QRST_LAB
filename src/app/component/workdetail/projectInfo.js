@@ -18,9 +18,9 @@ export default async function ProjectInfo(props){
 
     return(
         <div className="work-detail-information">
-                <div className={`info ${inter300.className}`}>
-                    <div className={inter300.className}>
-                        <div>Duration</div>
+            <div className={`info ${inter300.className}`}>
+                <div className={inter300.className}>
+                    <div>Duration</div>
                         <div>
                             <span>{syear}. {smonth}. {sdate}</span>
                             <span> ~ </span>
@@ -66,6 +66,6 @@ export default async function ProjectInfo(props){
                         )  
                     ))}
                 </div>
-            </div>
+        </div>  
     );
 }

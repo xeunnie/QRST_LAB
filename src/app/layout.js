@@ -1,3 +1,4 @@
+import MobileMenu from './component/navigation/mobileMenu'
 import Nav from './component/navigation/nav'
 import './css/globals.css'
 import '/public/fonts/font.css'
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
       <body>
         {children}
         <Nav/>
+        <MobileMenu page={0}/>
       </body>
     </html>
   )

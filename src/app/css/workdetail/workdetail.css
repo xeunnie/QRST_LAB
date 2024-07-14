@@ -3,27 +3,76 @@
 @import url('detail.css');
 
 .detail-back{
-    padding: 13.5417vw 0;
-    color: #FFF;
+  padding: 13.5417vw 0 6vw;
+  color: #FFF;
+}
+.back-to-list{
+  text-transform: uppercase;
+  font-size: 2.896vw;
+  position: absolute;
+  top: 22.222vw;
+  left: 8.0556vw;
+  display: none;
+}
+.back-to-list a{
+  color: #FFF;
+}
+.detail-side{
+  padding: 0 13.5417vw 0;
+  box-sizing: border-box;
+}
+.projectName{
+  font-size: 1.5625vw;
+  text-align: center;
+  margin-bottom: 2.5521vw;
+}
+.mainImage{
+  width: 100vw;
+  height: auto;
+  margin-bottom: 4.0104vw;
+}
+.mainImage img{
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 1440px) {
+  .detail-back{
+      padding: 33.7125vw 0 27.355vw;
   }
   .detail-side{
-    padding: 0 13.5417vw 0;
-    box-sizing: border-box;
+    padding: 0 7.125vw 0;
   }
   .projectName{
-    font-size: 1.5625vw;
-    text-align: center;
-    margin-bottom: 2.5521vw;
+    font-size: 3.75vw;
+    margin-bottom: 6.125vw;
   }
   .mainImage{
-    width: 100vw;
-    height: auto;
-    margin-bottom: 4.0104vw;
+    margin-bottom: 9.625vw;
   }
-  .mainImage img{
-    width: 100%;
-    height: auto;
+}
+
+@media screen and (max-width: 744px) {
+  .detail-back{
+      padding: 36.944vw 0 42.3889vw;
   }
+  .back-to-list{
+    display: block;
+  }
+  .detail-side{
+    padding: 0 7.125vw 0;
+  }
+  .projectName{
+    font-size: 3.889vw;
+    text-align: left;
+    margin-bottom: 6.944vw;
+  }
+  .mainImage{
+    margin-bottom: 14.1667vw;
+    padding: 0 7.125vw 0;
+    box-sizing: border-box;
+  }
+}
 
 
 

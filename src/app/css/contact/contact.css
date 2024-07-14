@@ -1,5 +1,5 @@
 .people{
-    padding: 14.0625vw 13.5417vw 46.8229vw 13.5417vw;
+    padding: 14.0625vw 13.5417vw 30vw 13.5417vw;
     color: #FFF;
   }
   .people-page-title{
@@ -13,8 +13,6 @@
     display: grid;
     grid-template-columns: auto auto;
     gap: 6.4063vw 5.521vw;
-  }
-  .lab-leaders .leader{
   }
   .lab-leaders .leader .name{
     font-size: 2vw;
@@ -36,7 +34,6 @@
     color: #818181;
     font-size: 1.25vw;
     font-family: 'Pretendard-Regular';
-  
   }
   .lab-leaders .leader .career{
     margin-bottom: 1.9792vw;
@@ -47,22 +44,10 @@
     width: 100%;
     height: auto;
     gap: 19.3713%;
-    
   }
   .profile{
     width: 20.4191%;
     margin-bottom: 6.8229vw;
-  }
-  .circle{
-    width: 12.5vw;
-    height: 12.5vw;
-    margin-bottom: 1.0417vw;
-    overflow: hidden;
-  }
-  .circle img{
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
   }
   .profile .name{
     font-size: 1.8229vw;
@@ -72,4 +57,112 @@
   .profile .position{
     font-size: 1.3021vw;
     color: #989898;
+  }
+
+  @media screen and (max-width : 1440px) {
+    .people{
+      padding: 33.75vw 9.625vw 73.125vw 9.625vw;
+    }
+    .people-page-title{
+      margin-bottom: 9.875vw;
+      font-size: 3.75vw;
+      padding-bottom: 3.75vw;
+    }
+    .lab-leaders{
+      margin-bottom: 7.8646vw;
+      display: block;
+    }
+    .lab-leaders .leader{
+      margin-bottom: 18.875vw;
+    }
+    .lab-leaders .leader .name{
+      font-size: 5vw;
+      margin-bottom: 3.4462vw;
+    }
+    .lab-leaders .leader .position{
+      font-size: 3.125vw;
+      margin-bottom: 6.3075vw;
+    }
+    .lab-leaders .leader .intro{
+      font-size: 3vw;
+      margin-bottom: 4.625vw;
+    }
+    .lab-leaders .leader .careers{
+      font-size: 3vw;
+    }
+    .lab-leaders .leader .career{
+      margin-bottom: 4.625vw;
+    }
+
+    .members{
+      gap: 8.8025%;
+    }
+    .profile{
+      width: 45.5989%;
+      margin-bottom: 9.375vw;
+    }
+    .profile .name{
+      font-size: 4.375vw;
+      margin-bottom: 2.75vw;
+    }
+    .profile .position{
+      font-size: 3.125vw;
+    }
+  }
+
+  @media screen and (max-width : 744px) {
+    .people{
+      padding: 33.75vw 8.6111vw 73.125vw 8.6111vw;
+    }
+    .people-page-title{
+      margin-bottom: 13.333vw;
+      font-size: 4.305vw;
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    .lab-leaders{
+      margin-left: 5vw;
+      margin-right: 5vw;
+      margin-bottom: 7.8646vw;
+      display: block;
+    }
+    .lab-leaders .leader{
+      margin-bottom: 22.222vw;
+    }
+    .lab-leaders .leader .name{
+      font-size: 5vw;
+      margin-bottom: 2.3333vw;
+    }
+    .lab-leaders .leader .position{
+      font-size: 3.6111vw;
+      margin-bottom: 5.8333vw;
+    }
+    .lab-leaders .leader .intro{
+      font-size: 3.6111vw;
+      margin-bottom: 5.8333vw;
+    }
+    .lab-leaders .leader .careers{
+      font-size: 3.6111vw;
+    }
+    .lab-leaders .leader .career{
+      margin-bottom: 2.5vw;
+    }
+
+    .members{
+      gap: 8.8025%;
+      padding-left: 5vw;
+      padding-right: 5vw;
+      box-sizing: border-box;
+    }
+    .profile{
+      width: 100%;
+      margin-bottom: 10.556vw;
+    }
+    .profile .name{
+      font-size: 4.375vw;
+      margin-bottom: 2.75vw;
+    }
+    .profile .position{
+      font-size: 3.125vw;
+    }
   }
