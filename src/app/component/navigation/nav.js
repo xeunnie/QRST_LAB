@@ -8,7 +8,7 @@ const space_grotesk600 = Space_Grotesk({ weight: '600', subsets: ['latin'] });
 
 export default function Nav(){
 
-  const [activeButton, setActiveButton] = useState('');
+  const [activeButton, setActiveButton] = useState('about');
 
   const clickNavButton=(buttomName)=>{
     setActiveButton(buttomName);
@@ -19,8 +19,8 @@ export default function Nav(){
           <header>
             <nav className={`${space_grotesk600.className} nav-bar`}>
               <Link href="/" 
-                className={activeButton==='active' ? 'active':''}
-                onClick={()=>clickNavButton('active')}>
+                className={activeButton==='about' ? 'active':''}
+                onClick={()=>clickNavButton('about')}>
                   about
               </Link>
               <Link href="/pages/work" 
