@@ -25,7 +25,8 @@ header{
 
 @media screen and (max-width : 1440px) {
   .nav-bar{
-    gap: 9.75vw;
+    /* gap: 9.75vw; */
+    gap: 78px;
       /* margin-top: 4.9125vw; */
       margin-top: 39.3px;
       /* font-size: 2.5vw; */
