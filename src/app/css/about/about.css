@@ -38,12 +38,11 @@
   word-break: keep-all;
 }
 
-/* screen2 */
-.fade-out {
+/* screen2의 올라오는 효과 - 제거 요청해서 제거 */
+/* .fade-out {
   opacity: 0;
-}
-
-.fade-in-up {
+} */
+/* .fade-in-up {
   opacity: 1;
   transform: translateY(50vh);
   animation: fadeInUp 1.5s forwards;
@@ -54,7 +53,7 @@
     opacity: 1;
     transform: translateY(0);
   }
-}
+} */
 
 .draggdisable {
   -webkit-user-select: none;

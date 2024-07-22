@@ -21,7 +21,11 @@
     height: 100%;
     padding: 1.25vw;
     box-sizing: border-box;
-    display: none;
+    background-color: rgba(0,0,0,0.8);
+    /* display: none; */
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 300ms ease-in-out;
     text-transform: uppercase;
   }
   .project >div:first-child{
@@ -34,8 +38,11 @@
     color: rgba(255,255,255,0.5);
   }
   .flex-item:hover .project{
-    display: block;
-    background-color: rgba(0,0,0,0.8);
+    /* display: block;
+    background-color: rgba(0,0,0,0.8); */
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 800ms ease-in-out; 
   }
   
   @media screen and (max-width : 1440px) {
@@ -65,7 +72,8 @@
   }
   .project{
     position: static;
-    display: block;
+    opacity: 1;
+    /* display: block; */
     padding: 2.3vw 0 0;
     height: auto;
   }
