@@ -1,7 +1,7 @@
 import { fetchContentful } from "@/app/contentful/contentful";
 import { Inter } from 'next/font/google';
 
-const inter300 = Inter({ weight: '300', subsets: ['latin'] });
+const inter400 = Inter({ weight: '400', subsets: ['latin'] });
 
 export default async function ProjectInfo(props){
 
@@ -18,8 +18,8 @@ export default async function ProjectInfo(props){
 
     return(
         <div className="work-detail-information">
-            <div className={`info ${inter300.className}`}>
-                <div className={inter300.className}>
+            <div className={`info ${inter400.className}`}>
+                <div>
                     <div>Duration</div>
                         <div>
                             <span>{syear}. {smonth}. {sdate}</span>
@@ -48,7 +48,7 @@ export default async function ProjectInfo(props){
                         </div>
                     </div>
                 </div>
-                <div className={`statement ${inter300.className}`}>
+                <div className={`statement ${inter400.className}`}>
                     {studio.statementEng.content && studio.statementEng.content.map((data,index)=>(
                         index===0 ? (
                             <div key={index}>{data.content[0].value}</div>

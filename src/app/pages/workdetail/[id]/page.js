@@ -8,6 +8,7 @@ import Link from "next/link";
 import Footer from '/public/icons/footer.svg'
 
 const inter600 = Inter({ weight: '600', subsets: ['latin'] });
+const inter500 = Inter({ weight: '500', subsets: ['latin'] });
 
 export default async function Workdetail(props){
     const id = parseInt(props.params.id);
@@ -19,7 +20,7 @@ export default async function Workdetail(props){
     return(
         <div>
             <div className="detail-back">
-                <div className="back-to-list">
+                <div className={`back-to-list ${inter500.className}`}>
                     <Link href="/pages/work">&lt; back-to-list</Link>
                 </div>
                 <div className="detail-side">

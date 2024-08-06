@@ -83,7 +83,7 @@
     .work-detail-information .info >div{
       grid-template-columns: 30.8333vw auto;
       gap: 0vw;
-      margin-bottom: 3.7222vw;
+      margin-bottom: 2.7222vw;
     }
     .work-detail-information >div:nth-of-type(1){
       margin-bottom: 15.8333vw;

@@ -27,6 +27,7 @@
   align-items: center;
   overflow: hidden;
   background-color: #000;
+  /* background-color: aqua; */
 }
 
 .box:nth-child(1) {

@@ -78,6 +78,7 @@
   @media screen and (max-width: 744px) {
     .research-flex-wrap{
       padding: 34.125vw 8.333vw 34.125vw;
+      gap: 23.889vw;
     }
     .research-project-info{
       margin-bottom: 11.9444vw;
@@ -85,7 +86,7 @@
     .project-title{
       font-size: 4.444vw;
       padding-bottom: 0;
-      margin-bottom: 6.9444vw;
+      margin-bottom: 6vw;
       border-bottom: none;
     }
     .research-grid{
@@ -93,7 +94,7 @@
     }
     .project-subheading{
       font-size: 6.667vw;
-      margin-bottom: 9.1667vw;
+      margin-bottom: 8.1667vw;
     }
     .research-statement{
       font-size: 4.444vw;
