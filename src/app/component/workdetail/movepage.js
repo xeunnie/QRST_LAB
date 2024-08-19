@@ -39,6 +39,10 @@ export default function MovePage({id, length}){
                             sizes="100vw"
                         />
                     </Link>
+                    <div className='prevpage-title'>
+                        {/* data-connection */}
+                        Emotional Metrics For Samsung Smart TV dfd sdbhsbdhbshd 
+                    </div>
                 </div>
                 <div className="next_page">
                     <Link href={`/pages/workdetail/${(id+1)%length}`}>
@@ -49,6 +53,10 @@ export default function MovePage({id, length}){
                             sizes="100vw"
                         />
                     </Link>
+                    <div className='nextpage-title'>
+                        {/* data-connection */}
+                        Emotional Metrics For Samsung Smart TV dfd sdbhsbdhbshd 
+                    </div>
                 </div>
                 <div className="random_page">
                     <Link href={`/pages/workdetail/${randomIndex}`}>
@@ -59,6 +67,10 @@ export default function MovePage({id, length}){
                             sizes="100vw"
                         />
                     </Link>
+                    <div className='randompage-title'>
+                        {/* data-connection */}
+                        Emotional Metrics For Samsung Smart TV dfd sdbhsbdhbshd 
+                    </div>
                 </div>
             </div>
         </div>

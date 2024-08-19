@@ -2,12 +2,14 @@
   margin-top: 13.692vw;
 }
 .move_page_container :first-child{
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   margin-bottom: 3.0448vw;
   font-size: 1.69vw;
   box-sizing: border-box;
 }
 .move_page{
+  position: relative;
+  box-sizing: border-box;
   width: 100%;
   height: auto;
   display: grid;
@@ -17,6 +19,26 @@
 .move_page img{
   width: 100%;
   height: auto;
+}
+.move_page .prev_page,.move_page .next_page,.move_page .random_page{
+  position: relative;
+  box-sizing: border-box;
+
+} 
+.prevpage-title, .nextpage-title, .randompage-title{
+  color: #FFF;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1.614vw;
+  font-size: 0.986vw;
+  background: rgba(8, 8, 8, 0.80);
+  display: none;
+}
+.prev_page:hover .prevpage-title, .next_page:hover .nextpage-title, .random_page:hover .randompage-title{
+  display: block;
 }
 
 @media screen and (max-width: 1440px) {

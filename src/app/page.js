@@ -6,6 +6,7 @@ import Footer from '/public/icons/footer.svg'
 import Screen1 from './component/about/screen1';
 import Screen2 from './component/about/screen2';
 import Screen3 from './component/about/screen3';
+import Screen4 from './component/about/screen4';
 
 export default function Home() {
   const [page, setPage] = useState(0);
@@ -93,6 +94,8 @@ export default function Home() {
           <Screen3/>
         </div>
         <div className="box screen4">
+          <Screen4/>
+          {/* <P5Wrapper/> */}
         </div>
       </div>
       {/* <div className='footer'><Footer/></div> */}

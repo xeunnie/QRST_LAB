@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useEffect, useRef } from 'react';
-// import p5 from 'p5';
+import p5 from 'p5';
 
 const P5Wrapper = ({ sketch }) => {
   const canvasRef = useRef(null);
