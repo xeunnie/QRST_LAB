@@ -11,10 +11,10 @@ import Screen4 from './component/about/screen4';
 export default function Home() {
   const [page, setPage] = useState(0);
   const [isScrolling, setIsScrolling] = useState(false);
-  const [fadeInUp, setFadeInUp]=useState(false);
-  //-----모바일용 추가-----
+  const [fadeInUp, setFadeInUp] = useState(false);
+
+  // 모바일용 터치 위치 추적
   let startY = 0;
-  //---------------------
 
   useEffect(() => {
     const handleScroll = (event) => {
@@ -25,22 +25,19 @@ export default function Home() {
 
         if (event.deltaY > 0) {
           setPage((prevPage) => Math.min(prevPage + 1, lastPage));
-        }
-        if (event.deltaY < 0) {
+        } else if (event.deltaY < 0) {
           setPage((prevPage) => Math.max(prevPage - 1, 0));
         }
 
         setTimeout(() => {
           setIsScrolling(false);
-        }, 1550); 
+        }, 1500); 
       }
     };
-    
+
     const box = document.getElementsByClassName('box');
     const lastPage = box.length - 1;
 
-
-    //-----모바일용 추가-----
     const handleTouchStart = (event) => {
       startY = event.touches[0].clientY;
     };
@@ -60,26 +57,20 @@ export default function Home() {
 
         setTimeout(() => {
           setIsScrolling(false);
-        }, 1550);
+        }, 1500);
       }
     };
-    //---------------------
-
 
     window.addEventListener('wheel', handleScroll, { passive: false });
-    //-----모바일용 추가-----
     window.addEventListener('touchstart', handleTouchStart);
     window.addEventListener('touchmove', handleTouchMove, { passive: false });
-    //---------------------
 
     return () => {
       window.removeEventListener('wheel', handleScroll);
-      //-----모바일용 추가-----
       window.removeEventListener('touchstart', handleTouchStart);
       window.removeEventListener('touchmove', handleTouchMove);
-      //---------------------
     };
-  }, [isScrolling]); 
+  }, [isScrolling]);
 
   useEffect(() => {
     const handleKeyPress = (event) => {
@@ -105,39 +96,37 @@ export default function Home() {
     wrap.style.top = page * -100 + 'vh';
   }, [page]);
 
-  useEffect(()=>{
-    if(page==1){
+  useEffect(() => {
+    if (page === 1) {
       setTimeout(() => {
         setFadeInUp(true);
-      }, 1000); 
-    }else{
+      }, 1000);
+    } else {
       setTimeout(() => {
         setFadeInUp(false);
-      }, 300); 
+      }, 300);
     }
-  })
+  }, [page]);
 
   return (
-    <div className='container'>
+    <div className="container">
       <div id="wrap" className="wrap">
         <div className="box screen1">
-          <Screen1/>
+          <Screen1 />
         </div>
         <div className="box screen2">
-          <div className={`draggdisable center ${fadeInUp? "fade-in-up":"fade-out"}`}>
-            <Screen2/>
+          <div className={`draggdisable center ${fadeInUp ? "fade-in-up" : "fade-out"}`}>
+            <Screen2 />
           </div>
         </div>
         <div className="box screen3">
-          <Screen3/>
+          <Screen3 />
         </div>
         <div className="box screen4">
-          <Screen4/>
-          {/* <P5Wrapper/> */}
+          <Screen4 />
         </div>
       </div>
-      {/* <div className='footer'><Footer/></div> */}
+      {/* <div className="footer"><Footer /></div> */}
     </div>
   );
 }
-
