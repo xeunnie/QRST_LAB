@@ -1,8 +1,8 @@
 "use client"
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import MobileMenu from './component/navigation/mobileMenu';
-import Footer from '/public/icons/footer.svg'
+import Footer from '/public/icons/footer.svg';
 import Screen1 from './component/about/screen1';
 import Screen2 from './component/about/screen2';
 import Screen3 from './component/about/screen3';
@@ -10,18 +10,17 @@ import Screen4 from './component/about/screen4';
 
 export default function Home() {
   const [page, setPage] = useState(0);
-  const [isScrolling, setIsScrolling] = useState(false);
   const [fadeInUp, setFadeInUp] = useState(false);
+  const isScrollingRef = useRef(false);  // useRef로 상태를 추적
 
-  // 모바일용 터치 위치 추적
   let startY = 0;
 
   useEffect(() => {
     const handleScroll = (event) => {
       event.preventDefault();
 
-      if (!isScrolling) {
-        setIsScrolling(true);
+      if (!isScrollingRef.current) {
+        isScrollingRef.current = true;
 
         if (event.deltaY > 0) {
           setPage((prevPage) => Math.min(prevPage + 1, lastPage));
@@ -30,7 +29,7 @@ export default function Home() {
         }
 
         setTimeout(() => {
-          setIsScrolling(false);
+          isScrollingRef.current = false;
         }, 1500); 
       }
     };
@@ -43,20 +42,20 @@ export default function Home() {
     };
 
     const handleTouchMove = (event) => {
-      if (!isScrolling) {
+      if (!isScrollingRef.current) {
         const currentY = event.touches[0].clientY;
         const diffY = startY - currentY;
 
         if (diffY > 50) {
-          setIsScrolling(true);
+          isScrollingRef.current = true;
           setPage((prevPage) => Math.min(prevPage + 1, lastPage));
         } else if (diffY < -50) {
-          setIsScrolling(true);
+          isScrollingRef.current = true;
           setPage((prevPage) => Math.max(prevPage - 1, 0));
         }
 
         setTimeout(() => {
-          setIsScrolling(false);
+          isScrollingRef.current = false;
         }, 1500);
       }
     };
@@ -70,7 +69,7 @@ export default function Home() {
       window.removeEventListener('touchstart', handleTouchStart);
       window.removeEventListener('touchmove', handleTouchMove);
     };
-  }, [isScrolling]);
+  }, []);
 
   useEffect(() => {
     const handleKeyPress = (event) => {
