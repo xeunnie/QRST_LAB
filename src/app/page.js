@@ -12,6 +12,9 @@ export default function Home() {
   const [page, setPage] = useState(0);
   const [isScrolling, setIsScrolling] = useState(false);
   const [fadeInUp, setFadeInUp]=useState(false);
+  //-----모바일용 추가-----
+  let startY = 0;
+  //---------------------
 
   useEffect(() => {
     const handleScroll = (event) => {
@@ -32,14 +35,49 @@ export default function Home() {
         }, 1550); 
       }
     };
-
+    
     const box = document.getElementsByClassName('box');
     const lastPage = box.length - 1;
 
+
+    //-----모바일용 추가-----
+    const handleTouchStart = (event) => {
+      startY = event.touches[0].clientY;
+    };
+
+    const handleTouchMove = (event) => {
+      if (!isScrolling) {
+        const currentY = event.touches[0].clientY;
+        const diffY = startY - currentY;
+
+        if (diffY > 50) {
+          setIsScrolling(true);
+          setPage((prevPage) => Math.min(prevPage + 1, lastPage));
+        } else if (diffY < -50) {
+          setIsScrolling(true);
+          setPage((prevPage) => Math.max(prevPage - 1, 0));
+        }
+
+        setTimeout(() => {
+          setIsScrolling(false);
+        }, 1550);
+      }
+    };
+    //---------------------
+
+
     window.addEventListener('wheel', handleScroll, { passive: false });
+    //-----모바일용 추가-----
+    window.addEventListener('touchstart', handleTouchStart);
+    window.addEventListener('touchmove', handleTouchMove, { passive: false });
+    //---------------------
 
     return () => {
       window.removeEventListener('wheel', handleScroll);
+      //-----모바일용 추가-----
+      window.removeEventListener('touchstart', handleTouchStart);
+      window.removeEventListener('touchmove', handleTouchMove);
+      //---------------------
     };
   }, [isScrolling]); 
 
