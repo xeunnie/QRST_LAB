@@ -1,5 +1,5 @@
 "use client"
-import { fetchContentful } from "@/app/contentful/contentful"
+import { fetchContentful } from "@/lib/contentful"
 import { useState, useEffect } from "react";
 import Image from "next/image"
 import Link from "next/link";

@@ -1,6 +1,6 @@
-import MobileMenu from './component/navigation/mobileMenu'
-import Nav from './component/navigation/nav'
-import './css/globals.css'
+import MobileMenu from './components/navigation/mobileMenu'
+import Nav from './components/navigation/nav'
+import './styles/globals.css'
 import '/public/fonts/font.css'
 
 export const metadata = {

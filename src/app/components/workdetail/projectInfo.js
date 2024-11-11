@@ -1,4 +1,4 @@
-import { fetchContentful } from "@/app/contentful/contentful";
+import { fetchContentful } from "@/lib/contentful";
 import { Inter } from 'next/font/google';
 
 const inter400 = Inter({ weight: '400', subsets: ['latin'] });

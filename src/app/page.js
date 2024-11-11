@@ -1,12 +1,12 @@
 "use client"
 
 import { useState, useEffect, useRef } from 'react';
-import MobileMenu from './component/navigation/mobileMenu';
+import MobileMenu from './components/navigation/mobileMenu';
 import Footer from '/public/icons/footer.svg';
-import Screen1 from './component/about/screen1';
-import Screen2 from './component/about/screen2';
-import Screen3 from './component/about/screen3';
-import Screen4 from './component/about/screen4';
+import Screen1 from './components/about/screen1';
+import Screen2 from './components/about/screen2';
+import Screen3 from './components/about/screen3';
+import Screen4 from './components/about/screen4';
 
 export default function Home() {
   const [page, setPage] = useState(0);

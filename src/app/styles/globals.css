@@ -1,10 +1,10 @@
 @import url('common.css');
-@import url('./about/about.css');
-@import url('./work/work.css');
-@import url('./workdetail/workdetail.css');
-@import url('./service/service.css');
-@import url('./navigation/nav.css');
-@import url('./contact/contact.css');
+@import url('about/about.css');
+@import url('work/work.css');
+@import url('workdetail/workdetail.css');
+@import url('service/service.css');
+@import url('navigation/nav.css');
+@import url('contact/contact.css');
 
 
 /* .menu{

@@ -1,6 +1,6 @@
 // "use client"
 // import { useEffect, useState } from "react"
-import { fetchContentful } from "@/app/contentful/contentful"
+import { fetchContentful } from "@/lib/contentful"
 import { Inter } from "next/font/google";
 import { Space_Grotesk } from 'next/font/google'
 import Footer from '/public/icons/footer.svg'

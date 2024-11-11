@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# QRST Lab - 프로젝트
 
-## Getting Started
+## 개요
 
-First, run the development server:
+**QRST**는 카네기멜론대학교 Computational Creativity Lab에 이어 **한국예술종합학교**에 설립된 디자인 콜렉티브 이니셔티브입니다. 우리는 **컴퓨테이셔널 디자인 프로세스와 방법론**을 통해 첨단기술과 창의성의 경계를 넘나들며 새로운 가능성을 탐구합니다. QRST는 **의미 있고 실현 가능한** 창의적 솔루션을 발굴하는 것을 목표로 합니다.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+본 프로젝트는 QRST Lab의 연구와 창의적 실험의 산물로, **한국예술종합학교**에서의 디자인 프로젝트로 기획되었습니다.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 기술 스택
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<p align="left">
+  <img src="https://img.shields.io/badge/Next.js-white?style=plastic&logo=next.js&logoColor=000000" alt="Next.js"/>
+  <img src="https://img.shields.io/badge/React-white?style=plastic&logo=react&logoColor=61DAFB" alt="React"/>
+  <img src="https://img.shields.io/badge/Tailwind%20CSS-white?style=plastic&logo=tailwind-css&logoColor=06B6D4" alt="Tailwind CSS"/>
+  <img src="https://img.shields.io/badge/Contentful-white?style=plastic&logo=contentful&logoColor=2478CC" alt="Contentful"/>
+  <img src="https://img.shields.io/badge/p5.js-white?style=plastic&logo=p5.js&logoColor=ED225D" alt="p5.js"/>
+  <img src="https://img.shields.io/badge/AOS-white?style=plastic&logo=aos&logoColor=007ACC" alt="AOS"/>
+</p>
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 프로젝트 기능
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. **페이지 전환 효과**: 스크롤 및 터치 이벤트를 통한 자연스러운 페이지 전환
+2. **반응형 레이아웃**: 다양한 기기에서 최적화된 레이아웃 제공
+3. **실시간 애니메이션**: p5.js와 AOS를 활용한 인터랙티브 효과
+4. **모바일 네비게이션**: 모바일 환경에서 접근성을 고려한 네비게이션 메뉴

@@ -1,6 +1,6 @@
 "use client"
 
-import { fetchContentful } from "@/app/contentful/contentful"
+import { fetchContentful } from "@/lib/contentful"
 import { Inter } from "next/font/google";
 import Image from "next/image"
 import { useEffect,useState} from "react";

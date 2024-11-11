@@ -1,9 +1,9 @@
-import Detail from "@/app/component/workdetail/detail";
+import Detail from "../../../components/workdetail/detail";
 import Image from "next/image";
-import { fetchContentful } from "@/app/contentful/contentful";
-import ProjectInfo from "@/app/component//workdetail/projectInfo";
+import { fetchContentful } from "@/lib/contentful";
+import ProjectInfo from "../../../components/workdetail/projectInfo";
 import { Inter } from 'next/font/google';
-import MovePage from "@/app/component/workdetail/movepage";
+import MovePage from "../../../components/workdetail/movepage";
 import Link from "next/link";
 import Footer from '/public/icons/footer.svg'
 
