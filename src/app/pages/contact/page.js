@@ -49,7 +49,7 @@ export default async function Contact(){
                 LAB Leader
               </div>
               <div className={`intro`}>
-                디자인 컨버전스 콜렉티브 큐알에스티의 대표로서 다양한 분야의 융합을 통해 새로운 가치를 발굴하는 컴퓨테이셔널 디자이너이자 크리에이터, 심규하입니다.
+                디자인 컨버전스 콜렉티브 <큐알에스티>의 대표로서 다양한 분야의 융합을 통해 새로운 가치를 발굴하는 컴퓨테이셔널 디자이너이자 크리에이터, 심규하입니다.
               </div>
               <div className={`careers`}>
                 <div className="career">career1</div>
@@ -66,7 +66,7 @@ export default async function Contact(){
                 Student Researcher
               </div>
               <div className={`intro`}>
-              디자인 컨버전스 콜렉티브 큐알에스티의 대표로서 다양한 분야의 융합을 통해 새로운 가치를 발굴하는 컴퓨테이셔널 디자이너이자 크리에이터, 심규하입니다.
+                디자인 컨버전스 콜렉티브 <큐알에스티>의 대표로서 다양한 분야의 융합을 통해 새로운 가치를 발굴하는 컴퓨테이셔널 디자이너이자 크리에이터, 심규하입니다.
               </div>
               <div className={`careers`}>
                 <div className="career">career1</div>

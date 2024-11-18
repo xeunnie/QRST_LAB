@@ -21,7 +21,7 @@ export default function MobileMenu(props){
             <div className={`mobile-menu ${menuOn ? 'menu-on' : ''}`}>
                 <Exit onClick={()=>setMenuOn(false)}/>
                 <div className={space_grotesk400.className}>
-                    <Link href="/public" onClick={()=>setMenuOn(false)}>About</Link>
+                    <Link href="/" onClick={()=>setMenuOn(false)}>About</Link>
                     <Link href="/pages/work" onClick={()=>setMenuOn(false)}>work</Link>
                     <Link href="/pages/service" onClick={()=>setMenuOn(false)}>service</Link>
                     <Link href="/pages/contact" onClick={()=>setMenuOn(false)}>contact</Link>
